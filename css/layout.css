@@ -6,8 +6,9 @@
 	font-size: 120px;
 	letter-spacing: 5px;
 	margin-top: 0;
-	margin-bottom: 80px;
+	margin-bottom: 0px;
 	text-transform: uppercase;
+	padding-bottom: 0px;
 }
 .main h2{
 	font-family: Pristina;
@@ -28,12 +29,11 @@
 }
 
 
-
-	.logo{
-		/*img{*/
-			/*float: right;*/
-		/*}*/
-	}
+#mainPic{
+	margin-top: 0px;
+	height: 250px;
+	width: 450px;
+}
 
 
 /*.navlook {
