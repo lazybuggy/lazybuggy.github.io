@@ -1,0 +1,166 @@
+
+.main h1{
+	color:white;
+	font-family: Freestyle Script;
+	font-weight: 600;
+	font-size: 120px;
+	letter-spacing: 5px;
+	margin-top: 0;
+	margin-bottom: 80px;
+	text-transform: uppercase;
+}
+.main h2{
+	font-family: Pristina;
+	font-size: 30px;
+	margin-top: auto;
+}
+.main h3{
+	font-family: Pristina;
+	font-size: 25px;
+	margin-left: 270px;
+	margin-top: -20px;
+}
+
+.main{
+	text-align: center;
+	top: 150px;
+	position: relative;
+}
+
+
+
+	.logo{
+		/*img{*/
+			/*float: right;*/
+		/*}*/
+	}
+
+
+/*.navlook {
+	color: white;
+	text-decoration: none;
+}
+#content{
+	background: white;
+	
+color: black;
+
+}*/
+#aboutMe{
+	color: #FFB8B8;
+	font-size: 60px;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 1px;
+	font-family: Freestyle Script;
+	padding-top:  80px;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+	background-color: #000033;
+	color: white;
+}
+.btn-main{
+	background-color: #333333;
+	border-radius: 15px;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	padding: 18px 2px;
+	margin-right:380px;
+	margin-left: 400px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial-Narrow;
+
+}
+.btn-main :hover{
+	background-color: grey;
+	color:#ffffff;
+}
+.btn-main :visited{
+	text-decoration: none;
+	color: white;
+}
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 10px;
+}
+.jumbotron{
+	height:800px;
+
+	background-image: url(http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/bg-static.jpg);
+	background-repeat: no-repeat;
+	background-size: 2049px 850px;
+}
+
+.content{
+	padding-top: 80px;
+padding-bottom:100px;
+}
+.content .column{
+	float:left;
+	width: 25%;
+	font-family: cursive;
+	text-align: center;
+}
+
+.content .column img{
+	height: 250px;
+}
+
+.content h2{
+	font-weight: 600;
+	font-size: 23px;
+	font-family: FreeStyle Script;
+	text-transform: uppercase;
+	color: #FFB8B8;
+}
+
+.content p{
+	font-weight: 400;
+	font-size: 16px;
+	font-family: Book Antiqua;
+	line-height: 22px;
+	padding: 0 50px;
+	margin-bottom: 40px;
+	color: white;
+}
+.GoToTop{
+	clear: both;
+	padding: auto;
+	text-align: center;
+	font-size: 70px;
+	font-family:  FreeStyle Script;
+	text-decoration: none;
+	color: white;
+	border-radius: 50px;
+}
+.GoToTop :hover{
+	background-color: #191947;
+	color:#ffffff;
+	text-decoration: none;
+}
+.GoToTop :visited{
+	text-decoration: none;
+	color: white;
+}
+#instruct{
+	text-align: center;
+	font-size: 30px;
+	font-family: FreeStyle Script;
+	margin-top: 0;
+}
+.footer{
+	background-color: #000033;
+	clear: both;
+	padding: 30px 0;
+}
+.footer p{
+	text-transform: uppercase;
+	font-size: 20px;
+	color: white;
+}

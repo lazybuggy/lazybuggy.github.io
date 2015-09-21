@@ -1,0 +1,44 @@
+.header{
+	padding: 40px 0;
+background-color: #01011F;
+position: fixed;
+width: 100%;
+z-index: 900;
+}
+.header .container .navbar li{
+	/*display: inline;
+	word-spacing: 80px;
+	border: 2px solid #000000;*/
+	font-family: Freestyle Script;
+	font-size:38px;
+	font-weight: 600;
+	display: inline;
+	letter-spacing: 1.2px;
+	word-spacing: 64px;
+	border: none;
+}
+ul{
+	text-align: center;
+}
+/*ul .header .container .navbar {
+	padding: 0;
+	margin:0;
+	width: 10;
+	text-align: center;
+}*/
+.header .container .navbar :visited{
+	color:white;
+}
+.header .container .navbar :hover{
+	color: #E6E2AC;
+}
+ .navbar {
+	margin-top: -15px;
+	padding: 0;
+	z-index: 1000;
+	position: fixed;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
