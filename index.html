@@ -6,6 +6,7 @@
 		<link  rel="stylesheet" type="text/css" href="css/layout.css">
 		<link  rel="stylesheet" type="text/css" href="css/common.css">
 
+
 	</head>
 
 	<body>
@@ -13,10 +14,10 @@
 <!-- NAV SECTION -->
 	<div class="header">
 			<div class="container">		
-				<ul class="navbar">
-					<li><a href="#Home" class:"navlook">Home</a></li>
+				<ul class="navbar" id="nav-anchor">
+					<li><a href="#Home" class:"navlook" class="smoothScroll">Home</a></li>
 					<li>  </li>
-					<li><a href="#aboutMe" class:"navlook">About Me</a></li>
+					<li><a href="#aboutMe" class:"navlook" class="smoothScroll">About Me</a></li>
 					<li>   </li>
 					<li><a href="#pastWork" class:"navlook">Past Work</a></li>
 				</ul>
@@ -92,10 +93,10 @@
 
 
 	<div class="GoToTop" >
- <a href="#Home"> Bop To The Top! </a>		
+ <a href="#Home" class="smoothScroll"> Bop To The Top! </a>		
 </div>
 <p id="instruct">(Click to go back to the top of the page)</p>
-	</body>
+	
 
 
 		<div class="footer">
@@ -103,4 +104,9 @@
 			<p>Lucia Okeh, 2015</p>
 			</div>
 		</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+
+</body>
 </html>
