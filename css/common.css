@@ -1,42 +1,74 @@
 .header{
-	padding: 40px 0;
-background-color: #01011F;
-position: fixed;
-width: 100%;
-z-index: 900;
+	
+background-color: #383b43;
+color: #ffffff;
+		cursor: default;
+		font-size: 1.1em;
+		height: 6em;
+		line-height: 6em;
+		width: 100%;
+		z-index: 10000;
 }
-.header .container .navbar li{
-	/*display: inline;
-	word-spacing: 80px;
-	border: 2px solid #000000;*/
-	font-family: Freestyle Script;
-	font-size:38px;
-	font-weight: 600;
-	display: inline;
-	letter-spacing: 5.2px;
-	padding-right: 80px;
-	padding-left: 30px;
-	word-spacing: 10px;
+body .landing .header nav a{
+	color: rgba(255,255,255,0.5);
+}
+body.landing .header {
+		background-color: transparent;
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+	.header h1 {
+			color: #ffffff;
+			height: inherit;
+			left: 3em;
+			line-height: inherit;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+}
+.header nav {
+			height: inherit;
+			line-height: inherit;
+			position: absolute;
+			right: 3em;
+			vertical-align: middle;
+			color: green;
+}
+.header nav > ul {
+				list-style: none;
+				margin: 0;
+				padding-left: 0;
+			}
+
+				.header nav > ul > li {
+					border-radius: 4px;
+					display: inline-block;
+					margin-left: 3em;
+					padding-left: 0;
+				}
+
+					
+
+.header .container {
+			position: relative;
+		}
+
+			.header .container h1 {
+				left: 0;
+				font-family: 'Bad Script';
+			}
+
+			.header .container nav {
+				right: 3;
+			}
+
+ .header .container .navbar :hover{
+	
+	color: aqua;
 }
 
-/*ul .header .container .navbar {
-	padding: 0;
-	margin:0;
-	width: 10;
-	text-align: center;
-}*/
-.header .container .navbar :visited{
-	color:white;
-}
-.header .container .navbar :hover{
-	color: #E6E2AC;
-}
- .navbar {
-	margin-top: -15px;
-	padding: 0;
-	z-index: 1000;
-	position: fixed;
-}
+
 a {
 	color: white;
 	text-decoration: none;

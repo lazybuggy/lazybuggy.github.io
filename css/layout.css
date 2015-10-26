@@ -1,7 +1,20 @@
 
+body{
+	
+	/*background-color: #000000;*/
+	background: linear-gradient(to bottom, #383b43 1%, #000000); 
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: white;
+	margin: 0;
+}
+.header nav > ul > li a {
+						color: #ffffff;
+						display: inline-block;
+						text-decoration: none;
+					}
 .main h1{
 	color:white;
-	font-family: Freestyle Script;
+	font-family:'Satisfy',Freestyle Script;
 	font-weight: 600;
 	font-size: 120px;
 	letter-spacing: 5px;
@@ -35,17 +48,6 @@
 	width: 450px;
 }
 
-
-/*.navlook {
-	color: white;
-	text-decoration: none;
-}
-#content{
-	background: white;
-	
-color: black;
-
-}*/
 #aboutMe{
 	color: #FFB8B8;
 	font-size: 60px;
@@ -55,47 +57,45 @@ color: black;
 	font-family: Freestyle Script;
 	padding-top:  80px;
 }
-html,body{
-	margin: 0;
-	padding: 0;
-	background-color: #000033;
-	color: white;
-}
-.btn-main{
-	background-color: #333333;
-	border-radius: 15px;
-	color: white;
-	font-weight: 600;
-	letter-spacing: 1.5px;
-	padding: 18px 2px;
-	margin-right:380px;
-	margin-left: 400px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-family: Arial-Narrow;
 
-}
-.btn-main :hover{
-	background-color: grey;
-	color:#ffffff;
-}
-.btn-main :visited{
-	text-decoration: none;
-	color: white;
-}
-.container {
-  margin: 0 auto;
-  max-width: 940px;
-  padding: 0 10px;
-}
+
 .jumbotron{
-	height:800px;
-
-	background-image: url(http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/bg-static.jpg);
-	background-repeat: no-repeat;
-	background-size: 2049px 850px;
+	background-image: url(../assets/images/dark_tint.png),url(../assets/images/bokeh_car_lights_bg.jpg);
+	background-position: center center;
+	background-size: cover;
+	color: black;
+	padding: 14em 0em 14em;
+	text-align: center;
 }
+.jumbotron :last-child {
+			margin-bottom: 0;
+		}
+
+.jumbotron h2 {
+			color: #ffffff;
+			font-size: 4em;
+			line-height: 1.25em;
+			margin: 0 0 0.5em 0;
+			padding: 0;
+		}
+
+.jumbotron p {
+			font-size: 1.5em;
+			margin-bottom: 1.75em;
+}
+
+.aboutMeDiv {
+	margin: 0;
+	margin-left: 15%;
+	margin-right: 8%;
+}
+.aboutMeDiv p {
+		margin: 0 0 2em 0;
+	}
+#goodreads{
+	color: aqua;
+}
+
 
 .content{
 	padding-top: 80px;
@@ -103,19 +103,19 @@ padding-bottom:100px;
 }
 .content .column{
 	float:left;
-	width: 25%;
+	width: 33%;
 	font-family: cursive;
 	text-align: center;
 }
 
 .content .column img{
-	height: 250px;
+	height: 60px;
 }
 
 .content h2{
 	font-weight: 600;
 	font-size: 23px;
-	font-family: FreeStyle Script;
+	font-family: 'Bad Script',FreeStyle Script;
 	text-transform: uppercase;
 	color: #FFB8B8;
 }
@@ -123,7 +123,7 @@ padding-bottom:100px;
 .content p{
 	font-weight: 400;
 	font-size: 16px;
-	font-family: Book Antiqua;
+	font-family: 'Open Sans Condensed', sans-serif;
 	line-height: 22px;
 	padding: 0 50px;
 	margin-bottom: 40px;
@@ -155,7 +155,7 @@ padding-bottom:100px;
 	margin-top: 0;
 }
 .footer{
-	background-color: #000033;
+	background-color: #000000;
 	clear: both;
 	padding: 30px 0;
 }
