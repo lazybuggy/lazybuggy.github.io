@@ -3,14 +3,16 @@
 	<head>
 		<title>Lucia Okeh</title>
 
-		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 		<link  rel="stylesheet" type="text/css" href="css/common.css">
 		<link  rel="stylesheet" type="text/css" href="css/projects.css">
-		
-		<link  rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Bad+Script|Satisfy'>
+		<link  rel="stylesheet" type="text/css" href="css/least.min.css" />	
+
+		<link  rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Bad+Script|VT323|Delius+Unicase|Kaushan+Script'>
 
 		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
 	</head>
 
 <body class = "landing">
@@ -22,7 +24,7 @@
 				<nav id="nav-anchor" class="navbar">
 					<ul>
 						<li><a href="index.html#Home" class:"navlook" class="smoothScroll">Home </a></li>
-						<li><a href="projects.html" class:"navlook">Portfolio</a></li>
+						<li><a href="projects.html" class="active-page" class:"navlook">Portfolio</a></li>
 					</ul>
 				</nav>	
 			</div>
@@ -31,18 +33,20 @@
 
 
 
-<div id="Home" class="jumbotron">
+<div id="Home">
 	<div class="container">
-		<div class="pageTitle" id="float-left">
-			<h1><span>MY </span> PROJECTS</h1>	
+		<div class="pageTitle">
+			<h1>MY PROJECTS</h1>	
 		</div>
 			<div class="introductory" id="float-left">
 				<p>  This page serves as my online portfolio; displaying both current and past projects that i've worked on alone, or with a team.To view the code behind my projects, each project will be linked to its Github repository. </p>
+
+
 			</div>
 	</div>
 </div>
 
-<h3> CURRENT PROJECTS</h3>
+<!-- <h3> CURRENT PROJECTS</h3>
 <p> ---Soon to come---</p>
 <h3>PAST PROJECTS </h3>
 <p> ---More to be added and descriptions/links provided---</p>
@@ -54,7 +58,52 @@
 	<td>   </td>
 	<td><img height="250px" src="assets/images/Project ScreenShots/BlackJackGUI.PNG"></td>
 	</tr>
-</table>
+</table> -->
+<!-- Least Gallery -->
+<section id="least">
 
+  <!-- Least Gallery: Fullscreen Preview -->
+  <div class="least-preview"></div>
+
+    <!-- Least Gallery: Thumbnails -->
+    <ul><h3>PAST PROJECTS </h3></ul>
+    <ul class="least-gallery">
+      <!-- 1th thumbnail -->
+        <li>
+          <a href="assets/images/Project ScreenShots/TurtleSplashGUI.PNG" data-subtitle="View Picture" data-caption="HII" title="Turtle Splash" >
+            <img src="assets/images/Project ScreenShots/TurtleSplashGUI.PNG" alt="Alt Image Text" />
+          </a>
+        </li>
+        <li>
+          <a href="assets/images/Project ScreenShots/BlackJackGUI.PNG" data-subtitle="ViewPicture" data-caption="Coming Soon - <a href='assets/blackJack/BlackJack.exe'> click here download the .exe file</a>" title="BlackJack">
+			 <img src="assets/images/Project ScreenShots/BlackJackGUI.PNG" alt="Alt Image Text" />
+          </a>
+        </li>
+        <li>
+        	<a></a>
+        </li>
+    </ul>
+
+</section>
+<!-- Least Gallery end -->
+
+	<div class="GoToTop" >
+ <a href="#Home" class="smoothScroll"> Bop To The Top! </a>		
+</div>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+
+<!-- jQuery library -->
+<script src="js/jquery.min.js"></script>
+<!-- least.js 2 library -->
+<script src="js/least.min.js"></script>
+  <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+  </script>
+  
 	</body>
 </html>

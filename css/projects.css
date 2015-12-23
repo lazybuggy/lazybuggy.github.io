@@ -3,22 +3,22 @@ body{
 	padding: 00;
 	/*background-color: #000000*/
 	
-  background: #000000;
+  background: #e7feff;
 
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'VT323', sans-serif;
 }
 .header nav > ul > li a {
 						color: white;
 						display: inline-block;
 						text-decoration: none;
 					}
-.jumbotron{
+/*.jumbotron{
 	height:1000px;
 	width: 100%;
 	background-image: url(../assets/images/portal.jpg);
 	background-repeat: no-repeat;
 	
-}
+}*/
 #float-left{
 	text-align: left;
 }
@@ -31,15 +31,14 @@ body{
     height: 150px;
 }
 
-.pageTitle{
-	text-align: center;
+.container .pageTitle{
 	top: 150px;
 	position: relative;
 }
 
 .pageTitle h1{
-	color:#E8E8E8;
-	font-family:'Bad Script',Freestyle Script;
+	color:#009399;
+	font-family: 'Delius Unicase', cursive;
 	font-weight: 600;
 	font-size: 100px;
 	letter-spacing: 5px;
@@ -48,13 +47,12 @@ body{
 	text-transform: uppercase;
 	padding-bottom: 0px;
 	text-indent: 12px;
-}
-.pageTitle h1 span{
-	color: #E8E8E8;
+	text-align: center;
 }
 
+
 .introductory p{
-	color: white;
+	color: black;
 	margin-left: 50px;
     margin-top: 150px;
    width: 500px;
@@ -64,7 +62,7 @@ body{
     
 }
 p{
-	color: white;
+	color: #99ebff;
 	margin-left: 50px;
 }
 h3{
@@ -74,4 +72,23 @@ h3{
 }
 table{
 	margin: auto;
+}
+
+
+.GoToTop{
+	clear: both;
+	padding: auto;
+	font-size: 60px;
+	font-family:  FreeStyle Script;
+	text-decoration: none;
+	color: black;
+	border-radius: 55px;
+	float: right;
+}
+.GoToTop :hover{
+	color:#FFB8B8;
+	text-decoration: none;
+}
+.GoToTop :visited{
+	color: black;
 }

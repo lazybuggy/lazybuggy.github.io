@@ -1,7 +1,7 @@
 .header{
 	
 background-color: #383b43;
-color: #ffffff;
+color: aqua;
 		cursor: default;
 		font-size: 1.1em;
 		height: 6em;
@@ -9,9 +9,7 @@ color: #ffffff;
 		width: 100%;
 		z-index: 10000;
 }
-body .landing .header nav a{
-	color: rgba(255,255,255,0.5);
-}
+
 body.landing .header {
 		background-color: transparent;
 		left: 0;
@@ -19,7 +17,7 @@ body.landing .header {
 		top: 0;
 	}
 	.header h1 {
-			color: #ffffff;
+			color: green;
 			height: inherit;
 			left: 3em;
 			line-height: inherit;
@@ -28,25 +26,32 @@ body.landing .header {
 			position: absolute;
 }
 .header nav {
-			height: inherit;
-			line-height: inherit;
 			position: absolute;
 			right: 3em;
-			vertical-align: middle;
-			color: green;
 }
+
 .header nav > ul {
 				list-style: none;
 				margin: 0;
 				padding-left: 0;
 			}
 
-				.header nav > ul > li {
+.header nav > ul > li {
 					border-radius: 4px;
 					display: inline-block;
 					margin-left: 3em;
 					padding-left: 0;
-				}
+					font-family: 'VT323';
+
+	}
+	.header .container .navbar .active-page{
+	border-bottom:  3px solid #009399;
+	padding-bottom: 2px;
+	font-size: 1.2em;
+	margin-bottom: 0px;
+	line-height: 40px;
+
+}
 
 					
 
@@ -54,22 +59,27 @@ body.landing .header {
 			position: relative;
 		}
 
-			.header .container h1 {
-				left: 0;
-				font-family: 'Bad Script';
-			}
+.header .container h1 {
+			left: 0;
+			font-family: 'Kaushan Script', cursive;
+}
 
-			.header .container nav {
-				right: 3;
-			}
+	.header .container nav {
+			right: 3;
+		}
+
+.header .container .navbar :visited{
+	color: black;
+}
 
  .header .container .navbar :hover{
 	
-	color: aqua;
+	color: #ff4d88;
 }
 
 
+
 a {
-	color: white;
+	color: black;
 	text-decoration: none;
 }
