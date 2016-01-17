@@ -1,7 +1,6 @@
 .header{
 	
 background-color: #383b43;
-color: aqua;
 		cursor: default;
 		font-size: 1.1em;
 		height: 6em;
@@ -28,6 +27,7 @@ body.landing .header {
 .header nav {
 			position: absolute;
 			right: 3em;
+			
 }
 
 .header nav > ul {
@@ -43,9 +43,16 @@ body.landing .header {
 					padding-left: 0;
 					font-family: 'VT323';
 
+
 	}
+.header nav > ul > li a {
+						color: #000000;
+						display: inline-block;
+						text-decoration: none;
+}
+
 	.header .container .navbar .active-page{
-	border-bottom:  3px solid #009399;
+	border-bottom:  3px solid #b266ff;;
 	padding-bottom: 2px;
 	font-size: 1.2em;
 	margin-bottom: 0px;
@@ -53,11 +60,11 @@ body.landing .header {
 
 }
 
-					
+			
 
 .header .container {
 			position: relative;
-		}
+}
 
 .header .container h1 {
 			left: 0;
@@ -67,7 +74,11 @@ body.landing .header {
 	.header .container nav {
 			right: 3;
 		}
-
+		
+a {
+	color: black;
+	text-decoration: none;
+}
 .header .container .navbar :visited{
 	color: black;
 }
@@ -79,7 +90,3 @@ body.landing .header {
 
 
 
-a {
-	color: black;
-	text-decoration: none;
-}

@@ -1,0 +1,30 @@
+body{
+	
+	background-color: #e7feff;
+	 
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: black;
+	margin: 0;
+}
+
+.title h1{
+	text-align: center;
+	margin-top: 120px;
+	letter-spacing: 4%;
+	color: #ff5050;
+	font-family: 'VT323';
+	font-size: 80px;
+}
+
+.quotes ul{
+	margin-left: 20%;
+	list-style: none;
+	font-size: 100%;
+}
+.quotes li{
+	padding-bottom: 1%;
+}
+.quotes span{
+	color: #5900b3;
+
+}

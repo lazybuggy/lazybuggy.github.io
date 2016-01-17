@@ -7,18 +7,8 @@ body{
 
 	font-family: 'VT323', sans-serif;
 }
-.header nav > ul > li a {
-						color: white;
-						display: inline-block;
-						text-decoration: none;
-					}
-/*.jumbotron{
-	height:1000px;
-	width: 100%;
-	background-image: url(../assets/images/portal.jpg);
-	background-repeat: no-repeat;
-	
-}*/
+
+
 #float-left{
 	text-align: left;
 }
@@ -37,7 +27,7 @@ body{
 }
 
 .pageTitle h1{
-	color:#009399;
+	color:#b266ff;
 	font-family: 'Delius Unicase', cursive;
 	font-weight: 600;
 	font-size: 100px;
@@ -73,13 +63,15 @@ h3{
 table{
 	margin: auto;
 }
-
+#repo{
+	color:  #b266ff;
+}
 
 .GoToTop{
 	clear: both;
 	padding: auto;
-	font-size: 60px;
-	font-family:  FreeStyle Script;
+	font-size: 170%;
+	font-family: 'Open Sans Condensed', sans-serif;
 	text-decoration: none;
 	color: black;
 	border-radius: 55px;
