@@ -1,8 +1,8 @@
 body{
-	margin: 0;
+	margin: 0px;
 /**	background: linear-gradient(#e5fff7,#66ffcc, #00b8e6,#007399); **/
 background-color: #f2f2f2;
-
+min-width: 1300px;
 }
 
 .header{
@@ -11,12 +11,12 @@ background-color: #f2f2f2;
 	opacity: 0.8;
 	line-height: 5em;
 	z-index: 10000;
-
 	position: fixed;
-	width: 100%;
+	left: 0px;
+	right: 0px;
+	width: 1400px;
 }
 .header h1{
-	color: pink;
 	height: inherit;
 	left: 0;
 	line-height: inherit;
@@ -26,14 +26,17 @@ background-color: #f2f2f2;
 	text-decoration: none;
 	font-family: 'Philosopher';
 }
-
+.header h1 :hover{
+	color: #2eb8b8;
+}
 a{
 	color: black;
 	text-decoration: none;
 }
 .header nav{
 	position: absolute;
-	right: 3em;
+	right: 4em;
+	
 }
 .header nav > ul{
 	list-style: none;
@@ -43,7 +46,7 @@ a{
 .header nav > ul > li {
 		border-radius: 4px;
 		display: inline-block;
-		margin-left: 3em;
+		margin-left: 2.2em;
 		padding-left: 0;
 }
 .header nav > ul > li a{
@@ -130,7 +133,7 @@ opacity: 1;
  }
 
 .sub-menu  {
-    width:320%;
+   	width:320%;
     padding:0px;
     position:absolute;
     top:100%;
@@ -165,24 +168,68 @@ opacity: 1;
 	color:  #015b8f;
 	font-family: 'Philosopher';
 	margin-left: 20px;
-	padding-top: 90px;
+	padding-top: 30px;
 }
 h2{
-	text-align: center;
-	padding-top: 80px;
+margin-left: 90px;
+margin-top: 10px;
+font-family: 'Philosopher';
 }
 h3{
 	margin-left: 50px;
 	color:#3e3436;
 }
-p{
-	margin-left: 50px;
-	margin-right: 50px;
+.title p, .title ul{
+	margin-left: 90px;
+	margin-right: auto;
+	font-family:'Philosopher';
+	width: 70%;
+	font-size: 18px;
 }
 
-
 #info h1{
-	color:#3e3436;
+	color:#004c80;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 	font-size: 300%;
+	padding-bottom: 0px;
+	font-family: 'Philosopher';
+	width: 90%;
+}
+
+#info h2{
+	color:#002033;
+	text-align: center;
+	padding: 0px;
+	margin-top: 0px;
+	font-size: 250%;
+}
+
+/**committee**/
+.title .column{
+	float: left;
+	width: 33%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.title .column img{
+	height: 160px;
+}
+.title h3{
+	color: #002033;
+	font-family:'Philosopher';
+	margin-left: 70px;
+}
+
+.title .column h3{
+	margin: auto;
+}
+
+.title span, .paper a, .paper a :visited{
+	color: #6600ff;
+}
+
+.title .paper h3{
+	padding-bottom: 20px;
 }
