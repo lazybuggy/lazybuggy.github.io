@@ -7,19 +7,21 @@
 
 	<!-- include -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/ideal-image-slider.css" type="text/css" />
 
 <link href='https://fonts.googleapis.com/css?family=Comfortaa|Philosopher' rel='stylesheet' type='text/css'>
 
 	<!-- include jQuery libary and other JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/jquery.scrollTo.js"></script>
-	<script src="js/jquery.localscroll.js"></script>
+
+			<script src="js/ideal-image-slider.js"></script>
 	<script src="js/custom-script.js"></script>
 	<script src="js/smoothscroll.js"></script>
+	
 </head>
 <body>
 	<div class="header">
-				<h1><a href="cisda.html#Home" class="smoothScroll">IEEE CISDA 2016</a></h1>
+				<h1><a href="index.html#Home" class="smoothScroll">IEEE CISDA 2016</a></h1>
 	<nav id="nav-bar">
 		<ul class="clearfix">
 			<li><a href="#call" class="smoothScroll">Call for Papers</a></li>
@@ -50,10 +52,12 @@
 		</ul>
 	</nav>
 	</div>
+
+
 	<div class = "container" id="Home">
 
-		<div id="slideshow">
-			<!-- slideshow images -->
+	<!-- 	<div id="slideshow">
+			<!-- slideshow images 
 			<ul>
 				<li id="slide1"><img src="assets/athens6.jpg" alt="Slide 1"></li>
 				<li id="slide2"><img src="assets/athens4.jpg" alt="Slide 2"></li>
@@ -62,21 +66,35 @@
 
 
 			</ul>
+		</div> -->
+		<div id="slider">
+		        <img src="assets/athens6.jpg" alt="Slide 1">
+		        <img src="assets/athens4.jpg" alt="Slide 2">
+		        <img src="assets/athens8.jpg" alt="Slide 3">
+		        <img src="assets/athens7.jpg" alt="Slide 4">
 		</div>
-		<div id="slideshow-nav">
-			<!-- nav list of slider images -->
+
+	<script>
+	var slider = new IdealImageSlider.Slider('#slider');
+	slider.start();
+	</script>
+		<!-- <div id="slideshow-nav">
+			<!-- nav list of slider images 
 			<ul>
 				<li><a href="#slide1">Slide 1 </a></li>
 				<li><a href="#slide2">Slide 2</a></li>
 		    	<li><a href="#slide3">Slide 3 </a></li>
 				<li><a href="#slide4">Slide 4</a></li>
 			</ul>
-		</div>
+		</div> -->
 
     &nbsp;
 	    <div id="info">
-	    	<h1>2016 IEEE Symposium on Computational Intelligence for Security and Defense Applications (IEEE CISDA 2016)</h1>
+	    	<h1>2016 IEEE Symposium on Computational Intelligence</h1>
+	    	<h1> for Security and Defense Applications</h1>
+	    	<h1> (IEEE CISDA 2016)</h1>
 	    	<h2 id="call"> December 6 - 9 2016, Athens Greece </h2>
+	    	<a target="_blank" href="http://ssci2016.image.ntua.gr/">Organized as part of the 2016 IEEE Symposium Series on Computational Intelligence</a>
 	    </div>
 		
 
@@ -84,10 +102,67 @@
 			<h1>Call for Papers</h1>
 			<p>Given the current global security environment, there has been increased interest within the security and defense communities in novel techniques for solving challenging problems. The genesis of this interest lies in the fact that repeated attempts of using traditional techniques have left many important problems unsolved, and in some cases, not addressed. New problems have emerged within the broad areas of security and defense that are difficult to tackle with conventional methods, thus requiring new techniques for detecting and adapting to emerging threats.
 </p><p>
-The purpose of the workshop is to present current and ongoing efforts in computational intelligence (e.g., neural networks, fuzzy systems, evolutionary computation, swarm intelligence, and other emerging learning or optimization techniques) as applied to security and defense problems.
+The purpose of the symposium is to present current and ongoing efforts in computational intelligence (e.g., neural networks, fuzzy systems, evolutionary computation, swarm intelligence, and other emerging learning or optimization techniques) as applied to security and defense problems.
 		</p>
 		<h2 id="important">Scope and Topics</h2>
-		</div>
+		<p>This symposium aims at publishing high-quality research efforts rooted in Computational Intelligence as applied to defense and security problems. First-class contributions addressing research challenges in these areas and their CI-based solutions (i.e., neural networks, fuzzy systems, evolutionary computation, swarm intelligence, rough sets, granular computing, and other emerging learning or optimization techniques) are solicited.</p>
+
+	<h3>List of topics</h3>
+	<div class="topics">
+		<h4>Advanced Architectures for Defense Operations</h4>
+		<ul>
+			<li>Multi-Sensor Data Fusion</li>
+			<li>Hard-Soft Data Fusion</li>
+			<li>Context-Aware Data Fusion</li>
+			<li>Employment of Autonomous Vehicles</li>
+			<li>Intelligence Gathering and Exploitation</li>
+			<li>Mine Detection</li>
+			<li>Situational Assessment</li>
+			<li>Impact Assessment</li>
+			<li>Process and User Refinement</li>
+			<li>Automatic Target Recognition</li>
+			<li>Mission Weapon Pairing and Assignment</li>
+			<li>Sensor Cueing and Tasking</li>
+			<li>Self-Healing Systems</li>
+		</ul>
+	</div>
+	<div class="topics">
+		<h4>Modeling and Simulation of Defense Operations</h4>
+		<ul>
+			<li>Logistics Support</li>
+			<li>Mission Planning and Execution</li>
+			<li>Resource Management</li>
+			<li>Red Teaming</li>
+			<li>Computational Red Teaming</li>
+			<li>Course of Action Generation and Recommendation</li>
+			<li>Models for War Games</li>
+			<li>Risk-Aware Decision Support</li>
+			<li>Multi-Agent Based Simulation</li>
+			<li>Critical Infrastructure Protection</li>
+			<li>Strategic Planning</li>
+			<li>Counterterrorism and Counterinsurgency</li>
+			<li>Behavioral or Cognitive Learning</li>
+			<li>Human Modeling: Behavior, Emotion, Motion</li>
+		</ul>
+	</div>
+	<div class="topics">
+		<h4>Security Applications</h4>
+		<ul>
+			<li>Surveillance</li>
+			<li>Suspect Behavior Profiling</li>
+			<li>Anomaly Detection</li>
+			<li>Automated Handling of Dangerous Situations or People</li>
+			<li>Stationary or Mobile Object Detection, Recognition and Classification</li>
+			<li>Intrusion Detection Systems</li>
+			<li>Cyber-Security</li>
+			<li>Air, Maritime and Land Security</li>
+			<li>Network Security</li>
+			<li>Biometrics Security</li>
+			<li>Forensics Security</li>
+			<li>Authentication Technologies</li>
+		</ul>
+	</div>
+	</div>
 
 		<div  class="title">
 			<h1>Important Dates</h1>
@@ -103,19 +178,22 @@ The purpose of the workshop is to present current and ongoing efforts in computa
 			
 		<div class="column">
 			<img src="assets/rafael.jpg">
-			<h3>Rafael Falcon</h3>
+			<h2>Symposium Chair</h2>
+			<h3><a target="_blank" href="http://www.site.uottawa.ca/~rfalc032/index.html">Rafael Falcon</a></h3>
 			<h3>University of Ottawa, Canada</h3>
 			<h3>Email: rfalcon@ieee.org</h3>
 		</div>
 		<div class="column">
 			<img src="assets/marco.jpg">
-			<h3>Marco Cococcioni</h3>
+			<h2>Symposium TPC Co-Chair</h2>
+			<h3><a target="_blank" href="http://www.iet.unipi.it/m.cococcioni/">Marco Cococcioni</a></h3>
 			<h3>East. University of Pisa, Italy</h3>
 			<h3>Email: m.cococcioni@iet.unipi.it</h3>
 		</div>
 		<div class="column">
 			<img src="assets/rami.jpg"></a>
-			<h3>Rami Abielmona</h3>
+			<h2>Symposium TPC Co-Chairs</h2>
+			<h3><a target="_blank" href="http://www.site.uottawa.ca/~rabielmo/">Rami Abielmona</a></h3>
 			<h3>Larus Technologies, Canada</h3>
 			<h3>Email: rabielmo@ieee.org</h3>
 		</div>
@@ -152,52 +230,66 @@ The purpose of the workshop is to present current and ongoing efforts in computa
 
 		<div id="program" class="title">
 			<h1>Registration</h1>
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p> To be announced later.</p>
 		</div>
 
 		<div  class="title">
 			<h1>Program</h1>
-			<p id="venue" > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p id="venue" > 
+			To be announced later.</p>
 		</div>
 
 		<div class="title">
 			<h1>Venue</h1>
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p> To be announced later.</p>
 			
 			<h1 id="aa"> Area Attractions</h1>
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
+			<p> Here are a few of Athens many attractions.</p>
+		<ul class="attractions">
+			<li>
+					<figure>
+						<img src="assets/acropolis.jpg"  alt="Acropolis of Athens">
+						<figcaption><p>The Acropolis of Athens </p></figcaption>
+					</figure>
+			</li>
+			<li>
+					<figure>
+						<img src="assets/parthenon.jpg"  alt="Parthenon">
+						<figcaption><p>Parthenon</p></figcaption>
+					</figure>
+			</li>
+			<li>
+					<figure>
+						<img src="assets/plaka.jpg"  alt="Plaka">
+						<figcaption><p>Plaka</p></figcaption>
+					</figure>
+			</li>
+			<li>
+					<figure>
+						<img src="assets/temple.jpg"  alt="Temple">
+						<figcaption><p>Temple of Olympian Zeus</p></figcaption>
+					</figure>
+			</li>
+			<li>
+					<figure>
+						<img src="assets/theatre.jpg"  alt="Theatre">
+						<figcaption><p>Theatre of Herodes Atticus</p></figcaption>
+					</figure>
+			</li>
+			<li>
+					<figure>
+						<img src="assets/mount.jpg"  alt="Mpunt">
+						<figcaption><p>Mount Lycabettus</p></figcaption>
+					</figure>
+			</li>
+		</ul>
+	</div>
 
 
 
 		<div id="sponsor" class="title">
 			<h1>Sponsors</h1>
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>To be announced later.</p>
 		</div>
 
 		<div id="contact" class="title">
