@@ -174,16 +174,16 @@ margin-left: 90px;
 margin-top: 10px;
 font-family: 'Philosopher';
 }
-.title h3{
+/*.title h3{
 	margin-left: 50px;
-	color:#3e3436;
-}
+	color:pink;
+}*/
 .title p, .title ul{
 	margin-left: 90px;
 	margin-right: auto;
-	font-family:'Philosopher';
+	font-family:  'Raleway', Times new Roman, 'Philosopher';
 	width: 70%;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 #info h1{
@@ -233,7 +233,7 @@ font-family: 'Philosopher';
 .title .column img{
 	height: 160px;
 }
-.title h3, .title h3 a{
+ .title h3,.title h3 a{
 	color: #002033;
 	font-family:'Philosopher';
 	margin-left: 70px;
@@ -247,7 +247,7 @@ font-family: 'Philosopher';
 	color: #009999;
 }
 
-.title span, .paper a, .paper a :visited{
+.important span, .paper a, .paper a :visited{
 	color: #6600ff;
 }
 
@@ -267,6 +267,7 @@ font-family: 'Philosopher';
 	color: #002033;
 	font-family:'Philosopher';
 	margin-left: 70px;
+	font-size: 18px;
 }
 /** table stuff **/
 
@@ -337,3 +338,22 @@ font-family: 'Philosopher';
 	-webkit-transform: translateY(40px);
 	transform: translateY(40px);
 }
+
+/**/
+.important{
+	float: left;
+    width: 500px;
+    height: auto;
+    margin-right: 8px;
+	color: #002033;
+	font-family:'Philosopher';
+	margin-left: 70px;
+}
+.fr{
+	margin-left: 60%;
+
+}
+.title .fl h3 > .title h3{
+	width: 40px;
+}
+
