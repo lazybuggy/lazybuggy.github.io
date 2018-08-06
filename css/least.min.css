@@ -15,12 +15,7 @@
 *** http://kamilczujowski.de
 **/
 /* @group BASE */
-* {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  outline: 0;
-}
+
 
 html,
 body {
@@ -84,7 +79,7 @@ img {
   /* @group Smallimages */
 }
 #least .least-preview {
-  background-color: #F5F5F5;
+  background-color: #ffffff;
   border-bottom: 2px solid;
   border-color: #f1f0f0;
   padding: 50px 0;
@@ -113,13 +108,13 @@ img {
 #least .least-preview article {
   max-width: 960px;
   margin: 0 auto;
-  text-align: left;
   position: relative;
   top: 20px;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+  font-family: 'Arapey', serif;
+	font-size: 1.2em;
+	text-align: justify;
 }
 #least .least-preview article strong {
   font-weight: 800;
@@ -138,9 +133,9 @@ img {
   position: relative;
   display: block;
   text-decoration: none;
-  width: 240px;
+  width: 400px;
   /* Default width: 240px: to edit go to assets/options */
-  height: 150px;
+  height: 300px;
   /* Default height: 150px: to edit go to assets/options */
   /* @group Outline */
   -webkit-transition-property: outline-color;
@@ -163,9 +158,9 @@ img {
   /* @end */
 }
 #least .least-gallery li a img {
-  width: 240px;
+  width: 400px;
   /* Default width: 240px: to edit go to assets/options */
-  height: 150px;
+  height: 300px;
   /* Default height: 150px: to edit go to assets/options */
 }
 #least .least-gallery li a.active {
@@ -216,9 +211,9 @@ img {
   font-size: 15px;
   line-height: 175px;
   font-weight: 200;
-  width: 240px;
+  width: 400px;
   /* Default width: 240px: to edit go to assets/options */
-  height: 150px;
+  height: 300px;
   /* Default height: 150px: to edit go to assets/options */
   background: black;
   background: rgba(0, 0, 0, 0.5);

@@ -7,96 +7,140 @@
 		  <meta charset='utf-8'>
 
 		<link  rel="stylesheet" type="text/css" href="css/layout.css">
-		<link  rel="stylesheet" type="text/css" href="css/common.css">
 
 		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
-		<link  rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Bad+Script|VT323|Delius+Unicase|Kaushan+Script'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link  rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Bad+Script|VT323|Delius+Unicase|Kaushan+Script|Rock+Salt|Great+Vibes|Cinzel+Decorative'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Give+You+Glory|Kristi|Megrim|Merienda|Arapey" rel="stylesheet">
+		
+		<link href="css/sparkle.css" rel="stylesheet" type="text/css">
+
+		<link  rel="stylesheet" type="text/css" href="css/projects.css">
+		<link  rel="stylesheet" type="text/css" href="css/least.min.css" />	
+
+		<script>
+			$(document).ready(function(){
+				$(".slide-up").click(function(){
+					$(this).parent().slideUp();
+					$(".main-content").css({"visibility": "visible", "display": "block"});
+				});
+			/*	$(".down").click(function(){
+					$("div").slideDown();
+				}); -->*/
+			});
+		</script>
 
 
 	</head>
 
 	<body class = "landing">
 
-<!-- NAV SECTION -->
-	<div class="header">
-			<div class="container">	
-				<h1><a href="index.html">Lucia Okeh</a></h1>
-				<nav id="nav-anchor" class="navbar">
-					<ul>
-						<li><a href="#Home" class="active-page" class:"navlook" class="smoothScroll">Home </a></li>
-						<li><a href="projects.html" class:"navlook">Projects</a></li>
-					</ul>
-				</nav>	
-			</div>
-	</div>
-	
+		<div class = "enter">
+			<div class="background"></div>
+				<h1>Lucia Okeh</h1>
+
+			<!--	<div class="links">
+					<img src="assets/images/git.svg">
+					<img src="assets/images/linked.svg">
+					<img src="assets/images/email.svg">
+
+				</div> -->
+				<button class="slide-up">Gaze Into My Life ...</button>
+
+		</div>
+
 		
-
+	<div class ="main-content">
+			<div class="float-left">
+					<img src="assets/images/lucia_bitmoji2.JPG">
+			</div>
+			<div class="float-right">
+					<h3> Who is Lucia? </h3>
+					<p>Hi! I'm Lucia</p>
+					<p>I’m currently in my 4th year studying Software Engineering 
+						at the University of Ottawa. Some of my hobbies include 
+						travelling, gaming and reading. You can find some of the
+						 books i've read on my 
+						 <a target="_blank" id="goodreads" href="https://www.goodreads.com/lazybuggy">Goodreads</a> account.</p>
+					
+					<ul>
+						<li><a href="http://www.github.com/lazybuggy" target="_blank"><img src="assets/images/github3.png"></a></li>
+						<li><a href="https://ca.linkedin.com/in/luciaokeh" target="_blank"><img src="assets/images/linkedin3.png"></a></li>
+						<li><a href="mailto:lucia.okeh@gmail.com"><img src="assets/images/email2.png"></a></li>
+					</ul>
+			</div>
+			<div class="clear">
+				
 			
-			
-<div id="Home" class="main">
-	
-	<div class="aboutMeDiv">
-				<img src="assets/images/lucia.JPG" id="mainPic">
+				<!--	
+			<h2>It does not do to dwell on Dreams and Forget to Live..</h2>
+					<h3> -JK Rowling </h3>
+				-->
 
-		<h3> About Me </h3>
-		<p>
-			Hi! I'm Lucia :D 
-		</p>
-		<p>
-			Currently I’m in my 4th year studying Software Engineering at the University of Ottawa. Some of my hobbies include travelling, gaming and reading. You can find some of the books i've read on my <a target="_blank" id="goodreads" href="https://www.goodreads.com/lazybuggy">Goodreads</a> account.
-		</p>
-		<p>
-			Some of the experience I have includes C#, Java, CSS, HTML, Ruby on Rails and Unity3D. To find some of my source code you can check out my Github linked below and get more details about my past/current projects linked on my projects page.
-		</p>
-	</div>
-</div>		
-		<!--	
-	<h2>It does not do to dwell on Dreams and Forget to Live..</h2>
-			<h3> -JK Rowling </h3>
-		-->
+			<h3>Software Projects</h3>
+
+			<section id="least">
+
+					<!-- Least Gallery: Fullscreen Preview -->
+					<div class="least-preview"></div>
+				  
+					  <!-- Least Gallery: Thumbnails -->
+					  <ul class="least-gallery">
+						<!-- 1th thumbnail -->
+						  <li>
+							<a href="assets/images/Project ScreenShots/giftedLRG.PNG" data-subtitle="View" data-caption="<h4>GIFted</h4>  Developed a simple web app which utilized 2 RESTful APIs, Giphy for GIFs and OpenWeatherMaps for weather at various locations. Allows users to view GIFs related to the current weather at certain locations. The repository for this project can be found <a target='_blank' id='repo' href='https://github.com/lazybuggy/GIFted'><b>HERE</b></a>" title="GIFted" >
+							  <img src="assets/images/Project ScreenShots/gifted.PNG" alt="GIFted WebApp Image" />
+							</a>
+							</li>
+							
+						  <li>
+							<a href="assets/images/Project ScreenShots/princessCh2.PNG" data-subtitle="View" data-caption="<h4>Princess Charming</h4> Team of 3. Designed and developed a 2D game as a final project to apply UI knowledge taught in class. The repository for this project can be found <a target='_blank' id='repo' href='https://github.com/lazybuggy/PrincessCharming'><b>HERE</b></a>" title="Princess Charming">
+							   <img src="assets/images/Project ScreenShots/princessCh.PNG" alt="Princess Charming Image" />
+							</a>
+							</li>
+							
+						  <li>
+								<a href="assets/images/Project ScreenShots/faceoff.PNG" data-subtitle="View" data-caption="<h4>FaceOff</h4> Remember Dance Dance Revolution? This version puts your expressions to test! Introducing FaceOff, a revolutionary game for anyone who wants to see how well they can express themselves. The repository for this project can be found <a target='_blank' id='repo' href='https://github.com/lazybuggy/FaceOffEmotionApp'><b>HERE</b></a>" title="FaceOff">
+									<img src="assets/images/Project ScreenShots/faceoff1.PNG" alt="Alt Image Text" />
+								</a>
+							</li>
+						  </ul>
+						  <ul class="least-gallery">
+						   <li>
+							  <a href="assets/images/Project ScreenShots/stb2.PNG" data-subtitle="View" data-caption="<h4>Secure The Bag</h4> 6 hours to build a game with the theme 'Freezing'. You're a theif and the objective is to make to the end and steal the prize without being caught. Goodluck. The repository for this project can be found <a target='_blank' id='repo' href='https://github.com/lazybuggy/GameJam2018'><b>HERE</b></a>" title="Secure The Bag">
+								  <img src="assets/images/Project ScreenShots/stb.jpg" alt="Alt Image Text" />
+							  </a>
+							</li>
+							<li>
+								<a href="assets/images/Project ScreenShots/fMasterLRG.PNG" data-subtitle="View" data-caption="<h4>FilmMaster</h4> FilmMaster is a full stack web application. Using Postgresql and Ruby on Rails. My group and I created a movie review website that allowed for users to sign in, rate and review movies as well as view details on each movie. This was a project done for CSI2132. The repository can be found <a target='_blank' id='repo' href='https://github.com/lazybuggy/FilmMaster'><b>HERE</b></a> " title="FilmMaster">
+									<img src="assets/images/Project ScreenShots/fMaster.PNG" alt="Filmmaster Image" />
+								</a>
+							</li>
+						
+
+					</section>
 
 
 
-
-<div class="content">
-	
-		<div class="column">
-			<a href="https://ca.linkedin.com/in/luciaokeh" target="_blank"><img src="assets/images/linkedin.png"></a>
-			<h2>LinkedIn</h2>
-			<p> Check out my LinkedIn!</p>
 		</div>
-		<div class="column">
-			<a href="http://www.github.com/lazybuggy" target="_blank"><img src="assets/images/github.png"></a>
-			<h2>GitHub</h2>
-			<p> Check out some of my work!</p>
-		</div>
-		<div class="column">
-			<a href="https://twitter.com/luciaokeh" target="_blank"><img src="assets/images/twitter.png"></a>
-			<h2>Twitter</h2>
-			<p> Find me on twitter, tweeting oh so interesting things!</p>
-		</div>
-	
-</div>
+	</div>	
+
+<!-- jQuery library -->
+<script src="js/jquery.min.js"></script>
+<!-- least.js 2 library -->
+<script src="js/least.min.js"></script>
+  <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+  </script>
+
 
 </body>
 
-
-<footer>
-
-		<div class="footer">
-			<div class="container">
-			<p>Lucia Okeh &copy; 2018</p>
-			
-
-			<a href="quotes.html"><p id="quotes"> My Favorite quotes</p></a>
-
-			</div>
-		</div>
-
-
-</footer>
 
 </html>

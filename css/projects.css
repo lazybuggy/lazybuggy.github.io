@@ -1,12 +1,3 @@
-body{
-	margin: 0;
-	padding: 00;
-	/*background-color: #000000*/
-	
-  background: #e7feff;
-
-	font-family: 'VT323', sans-serif;
-}
 
 
 #float-left{
@@ -21,45 +12,11 @@ body{
     height: 150px;
 }
 
-.container .pageTitle{
-	top: 150px;
-	position: relative;
-}
-
-.pageTitle h1{
-	color:#b266ff;
-	font-family: 'Delius Unicase', cursive;
-	font-weight: 600;
-	font-size: 100px;
-	letter-spacing: 5px;
-	margin-top: 0;
-	margin-bottom: 0px;
-	text-transform: uppercase;
-	padding-bottom: 0px;
-	text-indent: 12px;
-	text-align: center;
-}
 
 
-.introductory p{
-	color: black;
-	margin-left: 50px;
-    margin-top: 150px;
-   width: 500px;
-    height: 50px;
 
-    text-align: left;
-    
-}
-p{
-	color: #99ebff;
-	margin-left: 50px;
-}
-h3{
-	color: #FFB8B8;
-	margin-left: 30px;
-	font-size: 40px;
-}
+
+
 table{
 	margin: auto;
 }
@@ -67,20 +24,4 @@ table{
 	color:  #b266ff;
 }
 
-.GoToTop{
-	clear: both;
-	padding: auto;
-	font-size: 170%;
-	font-family: 'Open Sans Condensed', sans-serif;
-	text-decoration: none;
-	color: black;
-	border-radius: 55px;
-	float: right;
-}
-.GoToTop :hover{
-	color:#FFB8B8;
-	text-decoration: none;
-}
-.GoToTop :visited{
-	color: black;
-}
+

@@ -1,13 +1,14 @@
-.header{
-	
-background-color: #383b43;
-		cursor: default;
-		font-size: 1.1em;
-		height: 6em;
-		line-height: 6em;
-		width: 100%;
-		z-index: 10000;
+.header{	
+	background-color: #383b43;
+	cursor: default;
+	font-size: 1.1em;
+	height: 6em;
+	line-height: 6em;
+	width: 100%;
+	z-index: 10000;
 }
+
+
 
 body.landing .header {
 		background-color: transparent;
