@@ -2,15 +2,17 @@ html {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   background: linear-gradient(to top, #283e51, #0a2342);
   /* background: black; */
+  overflow-y: scroll;
 }
 
 .lucia-body {
   color: white;
-  margin: 25px;
+  /* margin: 25px; */
   font-family: "Arapey", serif;
   font-family: "Montserrat", sans-serif;
-  margin: 25px 0 25px 25px;
+  margin: 10px 0 10px 10px;
   height: 100%;
+  overflow: hidden;
 }
 
 .lucia-nav {
@@ -35,9 +37,9 @@ html {
 }
 
 .lucia-img {
-  height: 400px;
-  width: 400px;
-  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  margin: 20px auto;
   -webkit-user-drag: none;
 }
 
@@ -46,6 +48,7 @@ html {
   margin: 80px 0;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .lucia-about-wrapper {
@@ -71,6 +74,11 @@ html {
   margin: 0 auto;
   font-family: "Cormorant Upright", serif;
   font-weight: 400;
+}
+
+.seq {
+  color: #ffffcf;
+  font-size: 16px;
 }
 
 .carousel-root {
@@ -119,6 +127,10 @@ html {
 }
 
 @media only screen and (min-width: 768px) {
+  .lucia-body {
+    margin: 25px;
+  }
+
   .header-content {
     float: left;
   }
@@ -144,9 +156,19 @@ html {
     margin: 0;
   }
 
-  .hero img {
+  /* .hero img {
     float: right;
     margin-right: -270px;
+  } */
+
+  .lucia-img {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .lucia-about {
+    flex-direction: row;
   }
 
   .main-content {
@@ -164,9 +186,45 @@ html {
     font-family: "Megrim", cursive;
   }
 
-  .about {
+  /* .about {
     width: 650px;
     padding: 20px;
     margin: auto;
+  } */
+
+  .carousel-root {
+    /* height: 400px; */
+    overflow: auto;
+    margin: 0 auto;
+    max-width: 1440px;
+    /* overflow-x: scroll;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: scroll;
+    scroll-snap-type: x mandatory; */
+  }
+
+  .carousel-wrapper {
+    /* position: absolute; */
+    /* height: 100%; */
+    /* width: 100%; */
+    overflow: auto;
+    /* padding: 20px; */
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .carousel-item {
+    /* width: 100%;
+      opacity: 0;
+      position: absolute;
+      top: 0; */
+    width: 400px;
+    display: flex;
+    flex-grow: 1;
+    /* display: inline-flex; */
+    /* flex-direction: column; */
+    margin-right: 15px;
+    /* scroll-snap-align: start; */
   }
 }

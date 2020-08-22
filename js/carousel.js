@@ -59,8 +59,8 @@ window.onload = function () {
     const hi = new Object();
     hi.x = Math.random() * width;
     hi.y = Math.random() * height;
-    hi.radius = 0.2 + Math.random() * (2 - 0.2);
-    hi.maxRadius = 2 + Math.random() * (3 - 2);
+    hi.radius = 0.2 + Math.random() * (1 - 0.2);
+    hi.maxRadius = 1.5 + Math.random() * (3 - 1.5);
     hi.speed = 0.01 + Math.random() * (0.05 - 0.01);
     hi.stroke = "#edec9a";
     hi.fill = "#fcfcd2";
@@ -146,4 +146,26 @@ window.onload = function () {
   // context.strok e();
   // context.fillStyle = "#111";
   // context.fill();
+
+  //SEQUENCE TEXT
+  var example = [
+    "A LOVER OF TRAVEL",
+    "ADDICTED TO YA BOOKS",
+    "A UOTTAWA SOFTWARE ENGINEERING ALUMNI",
+    "A SUCKER FOR AFFIRMATIONS & GOOD VIBES",
+    "IN LOVE WITH SPACE & THE UNKNOWN",
+    "AN ANIME LOVER",
+  ];
+  var root = document.getElementsByClassName("seq")[0];
+  textSequence(0);
+  function textSequence(i) {
+    if (example.length > i) {
+      setTimeout(function () {
+        root.innerHTML = example[i];
+        textSequence(++i);
+      }, 2500);
+    } else {
+      textSequence(0);
+    }
+  }
 };
