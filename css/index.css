@@ -9,16 +9,6 @@ html {
   width: 100vw;
 }
 
-#loading {
-  background: url('../assets/images/lu-icon.png') no-repeat center center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 9999999;
-}
-
 .lucia-body {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -146,7 +136,7 @@ h5{
 
 .end {
   text-align: center;
-  margin-bottom: 65px;
+  margin-bottom: 100px;
 }
 
 .social-wrapper {
