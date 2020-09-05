@@ -1,18 +1,26 @@
 html {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  background: linear-gradient(to top, #283e51, #0a2342);
-  /* background: black; */
   overflow-y: scroll;
+  background: url("../assets/images/iceland-bg.jpg");
+  height: 100vh;
+  background-size: cover;
+  position: fixed;
+  background-repeat: round;
+  width: 100vw;
 }
 
 .lucia-body {
   color: white;
-  /* margin: 25px; */
-  font-family: "Arapey", serif;
   font-family: "Montserrat", sans-serif;
-  margin: 10px 0 10px 10px;
+  padding: 10px 0 10px 10px;
+  margin: 0;
   height: 100%;
-  overflow: hidden;
+  overflow: scroll;
+  background: rgba(1,1,1,0.2);
+  box-sizing: border-box;
+}
+
+.lucia-wrapper{
+  margin: 15px;
 }
 
 .lucia-nav {
@@ -23,6 +31,9 @@ html {
   display: flex;
   flex-direction: column;
   z-index: 5;
+  font-family: "Cormorant Upright", serif;
+  font-size: 18px;
+  letter-spacing: 1.5px;
 }
 
 a {
@@ -36,15 +47,7 @@ a:hover {
 }
 
 .lucia-canvas {
-  position: absolute;
-  /* height: 100%; */
-  height: 400px;
-  top: 0;
-  width: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
+  display: none;
 }
 
 .lucia-hero {
@@ -64,18 +67,13 @@ a:hover {
   display: flex;
   margin: 80px 0;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-}
-
-.lucia-about-wrapper {
-  max-width: 530px;
-  margin-right: 20px;
 }
 
 .lucia-about-img {
   height: 300px;
   width: 300px;
+  border-radius: 10px;
   -webkit-user-drag: none;
 }
 
@@ -83,24 +81,26 @@ a:hover {
   margin: 5px auto;
   letter-spacing: 0.5em;
   font-family: "Cormorant Upright", serif;
-  /* font-family: "Elsie", cursive; */
-  /* font-family: "Montserrat", sans-serif; */
 }
 
-.lucia-hero h2 {
-  margin: 0 auto;
+h5{
   font-family: "Cormorant Upright", serif;
-  font-weight: 400;
-  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+
+.lucia-about-wrapper h4{
+  margin: 0;
 }
 
 .seq {
   color: #ffffcf;
   font-size: 16px;
+  height: 40px;
 }
 
 .carousel-root {
-  /* height: 400px; */
   overflow: hidden;
   overflow-x: scroll;
   width: 100%;
@@ -110,18 +110,11 @@ a:hover {
 }
 
 .carousel-wrapper {
-  /* position: absolute; */
-  /* height: 100%; */
-  /* width: 100%; */
   overflow: visible;
   white-space: nowrap;
 }
 
 .carousel-item {
-  /* width: 100%;
-    opacity: 0;
-    position: absolute;
-    top: 0; */
   width: 90%;
   display: flex;
   display: inline-flex;
@@ -131,7 +124,6 @@ a:hover {
 }
 
 .carousel-item img {
-  /* height: 100%; */
   width: 100%;
   height: 200px;
 }
@@ -140,12 +132,9 @@ a:hover {
   white-space: normal;
 }
 
-/* .carousel-item.active {
-  opacity: 1;
-} */
-
 .end {
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .social-wrapper {
@@ -158,68 +147,36 @@ a:hover {
   margin-left: 10px;
 }
 
-svg {
-  position: fixed;
-  /* margin: auto; */
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-@keyframes orbitAnimation {
-  0% {
-    transform: translate(-125px, 0) rotate3d(0, 0, 1, 360deg);
-  }
-
-  100% {
-    transform: translate(-125px, 0) rotate3d(0, 0, 1, 270deg);
-  }
-}
-
-.shooting-star {
-  transform-origin: 125px 0;
-
-  animation: 5s orbitAnimation infinite linear;
-}
-
 @media only screen and (min-width: 768px) {
-  .lucia-body {
-    margin: 25px;
+  html{
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   }
 
-  .header-content {
-    float: left;
+  .lucia-canvas {
+    position: absolute;
+    display: block;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
   }
 
   .lucia-hero {
     margin-right: 0;
   }
 
-  .header-content h1 {
-    font-size: 180px;
-    font-family: "Megrim", cursive;
-    margin: 0;
-    line-height: 150px;
+  .lucia-hero h1 {
+    font-size: 5vw;
+    letter-spacing: 5vw;
   }
 
-  .header-content h2 {
-    font-family: "Megrim", cursive;
-    font-size: 44px;
-    margin: 0;
-    text-align: end;
+  .lucia-about-wrapper {
+    margin-right: 50px;
+    font-size: 20px;
   }
-
-  .hero h3 {
-    text-align: right;
-    font-size: 30px;
-    font-family: "Megrim", cursive;
-    margin: 0;
-  }
-
-  /* .hero img {
-    float: right;
-    margin-right: -270px;
-  } */
 
   .lucia-img {
     height: 400px;
@@ -236,70 +193,31 @@ svg {
     width: 400px;
   }
 
-  /* .main-content {
-    clear: both;
-  } */
-
-  .main-content p {
-    font-family: "Arapey", serif;
-    font-size: 20px;
-    text-align: justify;
-  }
-
-  .main-content h3 {
-    font-size: 30px;
-    font-family: "Megrim", cursive;
-  }
-
-  /* .about {
-    width: 650px;
-    padding: 20px;
-    margin: auto;
-  } */
-
   .carousel-root {
-    /* height: 400px; */
     overflow: auto;
     margin: 0 auto;
     max-width: 1440px;
-    /* overflow-x: scroll;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: scroll;
-    scroll-snap-type: x mandatory; */
   }
 
   .carousel-wrapper {
-    /* position: absolute; */
-    /* height: 100%; */
-    /* width: 100%; */
     overflow: auto;
-    /* padding: 20px; */
     display: flex;
     flex-flow: wrap;
   }
 
   .carousel-item {
-    /* width: 100%;
-      opacity: 0;
-      position: absolute;
-      top: 0; */
     width: 400px;
     display: flex;
     flex-grow: 1;
     flex-basis: 300px;
-    /* display: inline-flex; */
-    /* flex-direction: column; */
     margin-right: 15px;
     margin-bottom: 15px;
     position: relative;
-    /* scroll-snap-align: start; */
   }
 
   .carousel-item img {
     height: 100%;
     width: 100%;
-    /* height: 200px; */
   }
 
   .carousel-item .carousel-text {
