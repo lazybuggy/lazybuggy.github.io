@@ -17,6 +17,22 @@ html {
 
 .lucia-nav {
   position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+a:hover {
+  opacity: 0.5;
 }
 
 .lucia-canvas {
@@ -34,6 +50,7 @@ html {
 .lucia-hero {
   display: flex;
   flex-direction: column;
+  margin-right: 10px;
 }
 
 .lucia-img {
@@ -57,8 +74,8 @@ html {
 }
 
 .lucia-about-img {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   -webkit-user-drag: none;
 }
 
@@ -74,6 +91,7 @@ html {
   margin: 0 auto;
   font-family: "Cormorant Upright", serif;
   font-weight: 400;
+  text-align: center;
 }
 
 .seq {
@@ -113,7 +131,7 @@ html {
 }
 
 .carousel-item img {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   height: 200px;
 }
@@ -122,8 +140,46 @@ html {
   white-space: normal;
 }
 
-.carousel-item.active {
+/* .carousel-item.active {
   opacity: 1;
+} */
+
+.end {
+  text-align: center;
+}
+
+.social-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  height: 70px;
+  margin-left: 10px;
+}
+
+svg {
+  position: fixed;
+  /* margin: auto; */
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@keyframes orbitAnimation {
+  0% {
+    transform: translate(-125px, 0) rotate3d(0, 0, 1, 360deg);
+  }
+
+  100% {
+    transform: translate(-125px, 0) rotate3d(0, 0, 1, 270deg);
+  }
+}
+
+.shooting-star {
+  transform-origin: 125px 0;
+
+  animation: 5s orbitAnimation infinite linear;
 }
 
 @media only screen and (min-width: 768px) {
@@ -133,6 +189,10 @@ html {
 
   .header-content {
     float: left;
+  }
+
+  .lucia-hero {
+    margin-right: 0;
   }
 
   .header-content h1 {
@@ -171,9 +231,14 @@ html {
     flex-direction: row;
   }
 
-  .main-content {
-    clear: both;
+  .lucia-about-img {
+    height: 400px;
+    width: 400px;
   }
+
+  /* .main-content {
+    clear: both;
+  } */
 
   .main-content p {
     font-family: "Arapey", serif;
@@ -222,9 +287,47 @@ html {
     width: 400px;
     display: flex;
     flex-grow: 1;
+    flex-basis: 300px;
     /* display: inline-flex; */
     /* flex-direction: column; */
     margin-right: 15px;
+    margin-bottom: 15px;
+    position: relative;
     /* scroll-snap-align: start; */
+  }
+
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+    /* height: 200px; */
+  }
+
+  .carousel-item .carousel-text {
+    white-space: normal;
+    position: absolute;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: space-evenly;
+    align-items: flex-start;
+    opacity: 0;
+  }
+
+  .carousel-text #repo {
+    color: #ffffcf;
+    text-decoration: none;
+  }
+
+  .carousel-text #repo:hover {
+    opacity: 0.5;
+  }
+
+  .carousel-item:hover .carousel-text {
+    opacity: 1;
   }
 }
