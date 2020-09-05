@@ -11,7 +11,21 @@ class roundRect {
   }
 }
 
+function hideLoader() {
+ var loading =  document.getElementById("loading");
+ console.log(loading);
+ if(loading){loading.style.visibility = 'hidden';}
+  // $('#loading').hide();
+}
+
+// window.ready(hideLoader);
+
+// // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+// setTimeout(hideLoader, 20 * 1000)
+
 window.onload = function () {
+  hideLoader();
+  setTimeout(hideLoader, 20 * 1000)
   var canvas = document.getElementsByClassName("lucia-canvas")[0];
   var canvasInfo = canvas.getBoundingClientRect();
 

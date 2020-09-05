@@ -1,11 +1,22 @@
 html {
   overflow-y: scroll;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   background: url("../assets/images/iceland-bg.jpg");
   height: 100vh;
   background-size: cover;
   position: fixed;
   background-repeat: round;
   width: 100vw;
+}
+
+#loading {
+  background: url('../assets/images/lu-icon.png') no-repeat center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999999;
 }
 
 .lucia-body {
@@ -79,7 +90,8 @@ a:hover {
 
 .lucia-hero h1 {
   margin: 5px auto;
-  letter-spacing: 0.5em;
+  font-size: 5vw;
+  letter-spacing: 5vw;
   font-family: "Cormorant Upright", serif;
 }
 
@@ -134,7 +146,7 @@ h5{
 
 .end {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .social-wrapper {
@@ -166,11 +178,6 @@ h5{
 
   .lucia-hero {
     margin-right: 0;
-  }
-
-  .lucia-hero h1 {
-    font-size: 5vw;
-    letter-spacing: 5vw;
   }
 
   .lucia-about-wrapper {
@@ -247,5 +254,9 @@ h5{
 
   .carousel-item:hover .carousel-text {
     opacity: 1;
+  }
+
+  .end {
+    margin-bottom: 15px;
   }
 }
