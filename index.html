@@ -1,150 +1,130 @@
- <!DOCTYPE html>
-<html>
-	<head>
-		<title>Lucia Okeh</title>
+<!DOCTYPE html>
+<html class="html">
 
-		  <meta name="viewport" content="width=device-width, initial-scale=1">
-		  <meta charset='utf-8'>
+<head>
+	<title>Lucia Okeh</title>
+	<meta name="description" content="Lucia Okeh personal website!" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset='utf-8'>
 
-		<link  rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
-		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Cormorant+Upright:wght@400;500&display=swap"
+		rel="stylesheet">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<link  rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Bad+Script|VT323|Delius+Unicase|Kaushan+Script|Rock+Salt|Great+Vibes|Cinzel+Decorative'>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 
-		<link href="https://fonts.googleapis.com/css?family=Give+You+Glory|Kristi|Megrim|Merienda|Arapey" rel="stylesheet">
-		
-		<link href="css/sparkle.css" rel="stylesheet" type="text/css">
+</head>
 
-		<link  rel="stylesheet" type="text/css" href="css/projects.css">
-		<link  rel="stylesheet" type="text/css" href="css/least.min.css" />	
+<body class="lucia-body">
+	<canvas class="lucia-canvas"></canvas>
 
-		<script>
-			$(document).ready(function(){
-				$(".slide-up").click(function(){
-					$(this).parent().slideUp();
-					$(".main-content").css({"visibility": "visible", "display": "block"});
-				});
-			/*	$(".down").click(function(){
-					$("div").slideDown();
-				}); -->*/
-			});
-		</script>
-
-
-	</head>
-
-	<body class = "landing">
-
-		<div class = "enter">
-			<div class="background"></div>
-				<h1>Lucia Okeh</h1>
-
-			<!--	<div class="links">
-					<img src="assets/images/git.svg">
-					<img src="assets/images/linked.svg">
-					<img src="assets/images/email.svg">
-
-				</div> -->
-				<button class="slide-up">Gaze Into My Life ...</button>
-
+	<div class="lucia-nav">
+		<a href="#about">ABOUT ME</a>
+		<a href="#projects">PROJECTS</a>
+		<a href="#findme">FIND ME</a>
+	</div>
+	<div class="lucia-wrapper">
+		<div class="lucia-hero">
+			<img class="lucia-img" src="assets/images/lu-icon.png" alt="Drawn picture of Lucia" />
+			<h1>LUCIA OKEH</h1>
 		</div>
 
-		
-	<div class ="main-content">
-			<div class="float-left">
-					<img src="assets/images/lucia_bitmoji2.jpg">
+		<div class="lucia-about" id="about">
+			<div class="lucia-about-wrapper">
+				<h5>ABOUT ME</h5>
+				<h2>Hi, I'm Lucia 👩🏽‍💻💫</h2>
+				<h4>
+					I'm A Toronto based Software Engineer. At current, I'm a fullstack developer at Jam3.
+				</h4>
+				<h4>
+					If I'm not coding, im reading.
+				</h4>
+				<h4>
+					If I'm not reading, I'm probably binge watching another show. 😜
+				</h4>
+				<h6>I AM ALSO
+					<div class="seq">AN ANIME LOVER</div>
+				</h6>
 			</div>
-			<div class="float-right">
-					<h3> Who is Lucia? </h3>
-					<p>Hi! I'm Lucia</p>
-					<p>I recently graduated from studying Software Engineering 
-						at the University of Ottawa. I'm currently on the lookout for a fulltime job in my field! I'd love to talk with you if you're hiring! Some of my hobbies include 
-						travelling, gaming and reading. You can find some of the
-						 books i've read on my 
-						 <a target="_blank" id="goodreads" href="https://www.goodreads.com/lazybuggy">Goodreads</a> account.</p>
-					
-					<ul>
-						<li><a href="http://www.github.com/lazybuggy" target="_blank"><img src="assets/images/github3.png"></a></li>
-						<li><a href="https://ca.linkedin.com/in/luciaokeh" target="_blank"><img src="assets/images/linkedin3.png"></a></li>
-						<li><a href="mailto:lucia.okeh@gmail.com"><img src="assets/images/email2.png"></a></li>
-					</ul>
-			</div>
-			<div class="clear">
-				
-			
-				<!--	
-			<h2>It does not do to dwell on Dreams and Forget to Live..</h2>
-					<h3> -JK Rowling </h3>
-				-->
-
-			<h3>Software Projects</h3>
-
-			<section id="least">
-
-					<!-- Least Gallery: Fullscreen Preview -->
-					<div class="least-preview"></div>
-				  
-					  <!-- Least Gallery: Thumbnails -->
-					  <ul class="least-gallery">
-						<!-- 1th thumbnail -->
-						  <li>
-							<a href="assets/images/Project ScreenShots/giftedLRG.PNG" data-subtitle="View" data-caption="<h4>GIFted</h4>  Developed a simple web app which utilized 2 RESTful APIs, Giphy for GIFs and OpenWeatherMaps for weather at various locations. Allows users to view GIFs related to the current weather at certain locations. The repository for this project can be found <a target='_blank' id='repo' href='https://github.com/lazybuggy/GIFted'><b>HERE</b></a>" title="GIFted" >
-							  <img src="assets/images/Project ScreenShots/gifted.PNG" alt="GIFted WebApp Image" />
-							</a>
-							</li>
-							
-						  <li>
-							<a href="assets/images/Project ScreenShots/princessCh2.PNG" data-subtitle="View" data-caption="<h4>Princess Charming</h4> Team of 3. Designed and developed a 2D game as a final project to apply UI knowledge taught in class. The repository for this project can be found <a target='_blank' id='repo' href='https://github.com/lazybuggy/PrincessCharming'><b>HERE</b></a>" title="Princess Charming">
-							   <img src="assets/images/Project ScreenShots/princessCh.PNG" alt="Princess Charming Image" />
-							</a>
-							</li>
-							
-						  <li>
-								<a href="assets/images/Project ScreenShots/faceoff.PNG" data-subtitle="View" data-caption="<h4>FaceOff</h4> Remember Dance Dance Revolution? This version puts your expressions to test! Introducing FaceOff, a revolutionary game for anyone who wants to see how well they can express themselves. The repository for this project can be found <a target='_blank' id='repo' href='https://github.com/lazybuggy/FaceOffEmotionApp'><b>HERE</b></a>" title="FaceOff">
-									<img src="assets/images/Project ScreenShots/faceoff1.PNG" alt="Alt Image Text" />
-								</a>
-							</li>
-						  </ul>
-						  <ul class="least-gallery">
-						   <li>
-							  <a href="assets/images/Project ScreenShots/stb2.PNG" data-subtitle="View" data-caption="<h4>Secure The Bag</h4> 6 hours to build a game with the theme 'Freezing'. You're a theif and the objective is to make to the end and steal the prize without being caught. Goodluck. The repository for this project can be found <a target='_blank' id='repo' href='https://github.com/lazybuggy/GameJam2018'><b>HERE</b></a>" title="Secure The Bag">
-								  <img src="assets/images/Project ScreenShots/stb.jpg" alt="Alt Image Text" />
-							  </a>
-							</li>
-							<li>
-								<a href="assets/images/Project ScreenShots/fMasterLRG.PNG" data-subtitle="View" data-caption="<h4>FilmMaster</h4> FilmMaster is a full stack web application. Using Postgresql and Ruby on Rails. My group and I created a movie review website that allowed for users to sign in, rate and review movies as well as view details on each movie. This was a project done for CSI2132. The repository can be found <a target='_blank' id='repo' href='https://github.com/lazybuggy/FilmMaster'><b>HERE</b></a> " title="FilmMaster">
-									<img src="assets/images/Project ScreenShots/fMaster.PNG" alt="Filmmaster Image" />
-								</a>
-							</li>
-							<li>
-							<a href="assets/images/Project ScreenShots/hp-large.jpg" data-subtitle="In Progress" data-caption="<h4>Wizarding World of Hogwarts</h4>  Texted based scenario game that uses Harrry Pottr data from PotterAPI. Upon user creation, the user will create their own adventure by exploring different scenarios that affect their relationships with other characters. The repository for this project can be found <a target='_blank' id='repo' href='https://github.com/lazybuggy/Wizards-of-Hogwarts'><b>HERE</b></a>" title="Wizarding World of Hogwarts" >
-							  <img src="assets/images/Project ScreenShots/hp-small.jpg" alt="WWH WebApp Image" />
-							</a>
-							</li>
-
-					</section>
-
-
-
+			<img class="lucia-about-img" src="assets/images/lucia-iceland.jpg" alt="Image of Lucia Okeh standing on hill in Iceland" />
 		</div>
-	</div>	
 
-<!-- jQuery library -->
-<script src="js/jquery.min.js"></script>
-<!-- least.js 2 library -->
-<script src="js/least.min.js"></script>
-  <script>
-            $(document).ready(function(){
-                $('.least-gallery').least();
-            });
-  </script>
+		<section class="carousel-root" id="projects">
+			<h5>PROJECTS</h5>
+			<div class="carousel-wrapper">
+				<div class="carousel-item active">
+					<img src="assets/images/Project ScreenShots/gifted.PNG" alt="GIFted WebApp Project Image"
+						draggable="false" />
+					<p class="carousel-text"> GIFTED - Developed a simple web app which utilized 2 RESTful APIs, Giphy for
+						GIFs and OpenWeatherMaps for weather at various locations. Allows users to view GIFs related to
+						the
+						current weather at certain locations. The repository for this project can be found <a
+							target='_blank' id='repo' href='https://github.com/lazybuggy/GIFted'><b>HERE</b></a></p>
+				</div>
+				<div class="carousel-item">
+					<img src="assets/images/Project ScreenShots/princessCh.PNG" alt="Princess Charming Project Image"
+						draggable="false" />
+					<p class="carousel-text">Princess Charming - Team of 3. Designed and developed a 2D game as a final
+						project to apply UI knowledge taught in class. The repository for this project can be found <a
+							target='_blank' id='repo'
+							href='https://github.com/lazybuggy/PrincessCharming'><b>HERE</b></a>
+					</p>
+				</div>
 
+				<div class="carousel-item">
+					<img src="assets/images/Project ScreenShots/faceoff1.PNG" alt="FaceOff Project Image" draggable="false" />
+					<p class="carousel-text">FaceOff - Remember Dance Dance Revolution? This version puts your expressions
+						to
+						test! Introducing FaceOff, a revolutionary game for anyone who wants to see how well they can
+						express themselves. The repository for this project can be found <a target='_blank' id='repo'
+							href='https://github.com/lazybuggy/FaceOffEmotionApp'><b>HERE</b></a></p>
+				</div>
+				</ul>
+				<div class="carousel-item">
+					<img src="assets/images/Project ScreenShots/stb.jpg" alt="Secure The Bag Project Image" draggable="false" />
+					<p class="carousel-text">Secure The Bag - 6 hours to build a game with the theme 'Freezing'. You're
+						a
+						theif and the objective is to make to the end and steal the prize without being caught.
+						Goodluck.
+						The repository for this project can be found <a target='_blank' id='repo'
+							href='https://github.com/lazybuggy/GameJam2018'><b>HERE</b></a></p>
+				</div>
+				<div class="carousel-item">
+					<img src="assets/images/Project ScreenShots/fMaster.PNG" alt="Filmmaster Project Image" draggable="false" />
+					<p class="carousel-text">FilmMaster - is a full stack web application. Using Postgresql and Ruby on
+						Rails. My group and I created a movie review website that allowed for users to sign in, rate and
+						review movies as well as view details on each movie. This was a project done for CSI2132. The
+						repository can be found <a target='_blank' id='repo'
+							href='https://github.com/lazybuggy/FilmMaster'><b>HERE</b></a></p>
+				</div>
+				<div class="carousel-item">
+					<img src="assets/images/Project ScreenShots/hp-small.jpg" alt="WWH Project Image"
+						draggable="false" />
+					<p class="carousel-text">(In Progress)Wizarding World of Hogwarts - Texted based scenario game that
+						uses
+						Harrry Pottr data from PotterAPI. Upon user creation, the user will create their own adventure
+						by
+						exploring different scenarios that affect their relationships with other characters. The
+						repository
+						for this project can be found <a target='_blank' id='repo'
+							href='https://github.com/lazybuggy/Wizards-of-Hogwarts'><b>HERE</b></a></p>
+				</div>
+			</div>
+		</section>
 
+		<h5 id="findme">FIND ME</h5>
+		<div class="social-wrapper">
+			<a href="mailto: lucia.okeh@gmail.com" target="_blank"><img class="social" src="assets/images/email.png"
+					alt="Email Image" draggable="false" /></a>
+			<a href="https://github.com/lazybuggy/" target="_blank"><img class="social" src="assets/images/github.png"
+					alt="Github Image" draggable="false" /></a>
+			<a href="https://www.linkedin.com/in/luciaokeh/" target="_blank"><img class="social"
+					src="assets/images/linkedin.png" alt="LinkedIn Image" draggable="false" /></a>
+		</div>
+		<p class="end">THE JOURNEY IS THE DESTINATION</p>
+	</div>
+	<script type="text/javascript" src="js/carousel.js"></script>
 </body>
-
-
 </html>
