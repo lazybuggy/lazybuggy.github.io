@@ -105,7 +105,7 @@ window.onload = function () {
   function textSequence(i) {
     if (sequenceText.length > i) {
       setTimeout(function () {
-        root.innerHTML = sequenceText[i];
+        root.innerText = sequenceText[i];
         textSequence(++i);
       }, 2500);
     } else {
