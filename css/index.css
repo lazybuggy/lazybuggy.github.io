@@ -1,7 +1,7 @@
 html {
   overflow-y: scroll;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  background: url("../assets/images/iceland-bg.jpg");
+  background: url("../assets/images/iceland-bg.png");
   height: 100vh;
   background-size: cover;
   position: fixed;
