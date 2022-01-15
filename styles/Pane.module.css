@@ -1,0 +1,11 @@
+.container{
+    background: white;
+    z-index: 2;
+    color: blue;
+    width: 75vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(100%);
+}

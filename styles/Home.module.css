@@ -1,61 +1,21 @@
 .container{
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  background: black url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-  color: white;
+  background: #e1f0f5;
+  background: #D6CFC9;
+
+  /* color: black; */
   height: 100vh;
-  overflow: hidden;
+  /* width: 100%; */
+  /* overflow: hidden; */
+
+
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+    font-family: 'Euclid Circular B', sans-serif;
 }
 
-@keyframes move-twink-back{
-  from {background-position: 0 0;}
-  to {background-position:-10000px 5000px;}
+.circle{
+  background:#f81acc; border-radius: 50%; width:20px; height:20px; position:absolute;
 }
 
-@keyframes move-cloud-back{
-  from {background-position: 0 40vh;}
-  to {background-position: 10000px 35vh;}
-}
-
-.twinklingStars{
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
-  background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-  z-index: 1;
-
-  animation: move-twink-back 200s linear infinite;
-}
-
-.cloud{
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
-  background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
-  background-repeat: repeat-x;
-
-  /* background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center; */
-  z-index: 1;
-
-  animation: move-cloud-back 200s linear infinite;
-}
-
-.main{
-  z-index: 2;
-  position: relative;
-}
-
-.name{
-  font-size: 5vw;
-  letter-spacing: 5vw;
-  font-family: "Cormorant Upright", serif;
-}

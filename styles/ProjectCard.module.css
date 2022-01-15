@@ -1,0 +1,52 @@
+/*make it 3 col for smaller break */
+.projectSection{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    padding: 25px 25px 120px 25px;
+    background: #D6CFC9;
+  }
+
+.projectSection .root:nth-child(4n) .background{
+    right: 0;
+}
+
+.projectSection .root:nth-child(4n) .info{
+    margin: 25px 300px 25px 25px;
+}
+  /**** */
+
+.root{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+/* .root:hover{
+    overflow: visible;
+} */
+
+.background{
+background-color: #648981;
+position: absolute;
+width: 100%;
+height: 100%;
+border-radius: 15px;
+overflow: hidden;
+
+}
+
+.content{
+    position: absolute;
+    background-color: #e1f0f5;
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    z-index: 1;
+}
+
+.info{
+    width: 175px;
+    margin: 25px 0 25px 300px;
+}
