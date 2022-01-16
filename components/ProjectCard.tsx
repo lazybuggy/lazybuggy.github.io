@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const ProjectCard: FunctionComponent<ProejctType> = ({
-  color,
+  colour,
   image,
   children,
 }) => {
@@ -32,7 +32,7 @@ const ProjectCard: FunctionComponent<ProejctType> = ({
         ref={backgroundRef}
         className={styles.background}
         style={{
-          backgroundColor: color,
+          backgroundColor: colour,
         }}
       >
         <div className={styles.info}>{children}</div>
@@ -41,7 +41,7 @@ const ProjectCard: FunctionComponent<ProejctType> = ({
         className={styles.content}
         ref={contentRef}
         style={{
-          backgroundImage: image,
+          backgroundImage: "url(" + image + ")",
         }}
       />
     </div>

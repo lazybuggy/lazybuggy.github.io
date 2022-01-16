@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Hero: FunctionComponent<HeroType> = ({
   backgroundImage,
-  color,
+  colour,
   children,
 }) => {
   // const [index, setIndex] = useState(null);
@@ -35,7 +35,7 @@ const Hero: FunctionComponent<HeroType> = ({
     <div
       style={{
         backgroundImage: backgroundImage,
-        background: color,
+        background: colour,
       }}
       className={styles.heroContainer}
       ref={index}

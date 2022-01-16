@@ -14,7 +14,7 @@ import { TweenMax, TweenLite, TimelineMax } from "gsap";
 import ProjectCard from "../components/ProjectCard";
 // import WordSwitcher from "../components/Pane";
 // const luMoon = require("../public/static/luMoon.png");
-// import luMoon from "../public/static/luMoon.png";
+// import luMoon from "static/luMoon.png";
 
 export default function Home({ title, description, ...props }) {
   // const [aboutOpen, setAboutOpen] = useState(false);
@@ -74,41 +74,39 @@ export default function Home({ title, description, ...props }) {
 
   return (
     <div className={styles.container}>
-      <Hero color="#332421">
+      <Hero colour="#332421">
         <h1>Lucia Okeh</h1>
         <p>The journey is the destination</p>
-
-        {/* <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div>
-        <div className={styles.circle}></div> */}
       </Hero>
       <Section>
-        <div>hello</div>
-        <div className={styles.hmmp}>
-          <div>Software Engineer working in Toronto, Canada.</div>
+        <div className={styles.intro}>
+          <h2>Welcome to my space</h2>
+          <div className={styles.introOne}>
+            <h3>
+              I am a Toronto based software engineer — Currently working @jam3.
+            </h3>
+          </div>
+          <div className={styles.introTwo}>
+            <p>If I'm not coding, im reading.</p>
+            <p>
+              &amp; if I'm not reading, I'm probably binge watching another
+              show. 😜
+            </p>
+          </div>
+          <div className={styles.interests}>
+            I like:{" "}
+            <WordSwitcher
+              interval={2000}
+              words={["travel", "reading", "space", "anime", "coding", ".."]}
+            />
+          </div>
         </div>
       </Section>
-      <Section align={Alignment.RIGHT} color="#897D5E">
+      <Section align={Alignment.RIGHT} colour="#897D5E">
         <div>roof</div>
       </Section>
       <div className={projStyles.projectSection}>
-        <ProjectCard>
+        <ProjectCard colour="#9F7474" image="/static/giftedProj.png">
           <h3>
             <a>GIFTED</a>
           </h3>
@@ -119,19 +117,19 @@ export default function Home({ title, description, ...props }) {
             locations.
           </p>
         </ProjectCard>
-        <ProjectCard color="#CFB895">
+        <ProjectCard colour="#A2A071" image="/static/faceoffProj.png">
           <h3>
             <a>boop</a>
           </h3>
           <p>view GIFs related to the current weather at certain locations.</p>
         </ProjectCard>
-        <ProjectCard color="#9C8170">
+        <ProjectCard image="/static/stbProj.jpeg">
           <h3>
             <a>boop</a>
           </h3>
           <p>view GIFs related to the current weather at certain locations.</p>
         </ProjectCard>
-        <ProjectCard color="#9F7474">
+        <ProjectCard colour="#555C80" image="/static/fMasterProj.png">
           <h3>
             <a>boop</a>
           </h3>

@@ -2,24 +2,16 @@
 .projectSection{
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 25px;
     padding: 25px 25px 120px 25px;
-    background: #D6CFC9;
+    background: #F5F7F2;
   }
-
-.projectSection .root:nth-child(4n) .background{
-    right: 0;
-}
-
-.projectSection .root:nth-child(4n) .info{
-    margin: 25px 300px 25px 25px;
-}
   /**** */
 
 .root{
     width: 300px;
-    height: 300px;
+    height: 550px;
     position: relative;
 }
 
@@ -44,9 +36,63 @@ overflow: hidden;
     height: 250px;
     margin: 25px;
     z-index: 1;
+    background-size: cover;
+    background-repeat: round;
 }
 
 .info{
-    width: 175px;
-    margin: 25px 0 25px 300px;
+    margin: 300px 25px 25px;
 }
+
+@media (min-width: 1024px) {
+    .projectSection{
+        /* display: grid; */
+        /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 25px;
+        padding: 25px 25px 120px 25px;
+        /* background: #F5F7F2; */
+      }
+    
+    .projectSection .root:nth-child(3n) .background{
+        right: 0;
+    }
+    
+    .projectSection .root:nth-child(3n) .info{
+        margin: 25px 300px 25px 25px;
+    }
+
+    .root{
+        height: 300px;
+    }
+
+    .info{
+        width: 175px;
+        margin: 25px 0 25px 300px;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    .projectSection{
+        /* display: grid; */
+        /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* background: #F5F7F2; */
+      }
+    
+    .projectSection .root:nth-child(4n) .background{
+        right: 0;
+    }
+    
+    .projectSection .root:nth-child(4n) .info{
+        margin: 25px 300px 25px 25px;
+    }
+
+    .projectSection .root:nth-child(3n) .background{
+        right: unset;
+    }
+    
+    .projectSection .root:nth-child(3n) .info{
+        margin: 25px 0 25px 300px;
+    }
+    }

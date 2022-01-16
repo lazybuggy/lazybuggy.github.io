@@ -1,5 +1,5 @@
 .sectionContainer{
-    background: #D6CFC9;
+    background: #F5F7F2;
     /* background: #D6CFC9; */
     height: 100%;
     /* ÷÷ calc(100% - 50px); */
@@ -19,7 +19,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
   }
 

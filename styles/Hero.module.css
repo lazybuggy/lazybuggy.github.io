@@ -27,12 +27,21 @@
     font-family: 'Recoleta', sans-serif;
     font-size: 90px;
     font-weight: 400;
+    margin: 0;
+    text-align: center;
   }
 
 
 .inner{
-  background: #D6CFC9;
-  width: 500px;
+  background: #F5F7F2;
+  width: 300px;
   height: 300px;
   border-radius: 15px;
 }
+
+@media (min-width: 768px) {
+    .inner{
+        width: 500px;
+        height: 300px;
+      }
+  }

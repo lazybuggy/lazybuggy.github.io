@@ -20,7 +20,7 @@ import WordSwitcher from "./WordSwitcher";
 
 const Section: FunctionComponent<SectionType> = ({
   backgroundImage,
-  color,
+  colour,
   align,
   children,
 }) => {
@@ -81,7 +81,7 @@ const Section: FunctionComponent<SectionType> = ({
         ref={innerRef}
         style={{
           backgroundImage: backgroundImage,
-          background: color,
+          background: colour,
         }}
       >
         <div className={styles.sectionContent} ref={contentRef}>

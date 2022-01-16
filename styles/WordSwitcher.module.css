@@ -14,3 +14,8 @@
     border-bottom: none;
     border-top: 35px solid currentColor;
 }
+
+.textContainer,.container{
+    color:#77917A;
+    display: inline;
+}

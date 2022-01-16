@@ -15,7 +15,18 @@
     font-family: 'Euclid Circular B', sans-serif;
 }
 
-.circle{
-  background:#f81acc; border-radius: 50%; width:20px; height:20px; position:absolute;
+.intro{
+  color: #F5F7F2;
 }
 
+.intro h2{
+  font-size: 40px;
+}
+
+.intro p{
+  margin: 0;
+}
+
+.intro .interests{
+  margin-top: 50px;
+}

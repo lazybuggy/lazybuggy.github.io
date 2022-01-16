@@ -50,17 +50,21 @@ const WordSwitcher: FunctionComponent<WordSwitcherType> = ({
 
   return (
     <div className={styles.container}>
-      <button
-        className={[styles.previousArrow, styles.arrow].join(" ")}
-        style={{ color: colour }}
-        onClick={() => setIndex((index) => index - 1)}
-      />
+      {!autoplay && (
+        <button
+          className={[styles.previousArrow, styles.arrow].join(" ")}
+          style={{ color: colour }}
+          onClick={() => setIndex((index) => index - 1)}
+        />
+      )}
       <div className={styles.textContainer}>{word}</div>
-      <button
-        className={[styles.nextArrow, styles.arrow].join(" ")}
-        style={{ color: colour }}
-        onClick={() => setIndex((index) => index + 1)}
-      />
+      {!autoplay && (
+        <button
+          className={[styles.nextArrow, styles.arrow].join(" ")}
+          style={{ color: colour }}
+          onClick={() => setIndex((index) => index + 1)}
+        />
+      )}
     </div>
   );
 };
