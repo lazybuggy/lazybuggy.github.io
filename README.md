@@ -1,6 +1,4 @@
 # lazybuggy.github.io
-My personal website which you can find at...
+Repo for personal website
+<a href="http://luciaokeh.space">luciaokeh.space</a> 
 
-<a href="http://luciaokeh.me">luciaokeh.me</a> 
-
-##Currently under construction

@@ -1,0 +1,33 @@
+.sectionContainer {
+  background: #f5f7f2;
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.sectionContent {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sectionContent h1 {
+  font-family: "Recoleta", sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+}
+
+.inner {
+  background: #6a423d;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 75%;
+  height: 80vh;
+}
+
+.right {
+  border-radius: 15px 0 0 15px;
+  margin-left: auto;
+}

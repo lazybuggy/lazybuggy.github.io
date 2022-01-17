@@ -1,0 +1,41 @@
+.heroContainer {
+  background: #332421;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.heroContent {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heroContent h1 {
+  font-family: "Recoleta", sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+.inner {
+  background: #f5f7f2;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    width: 500px;
+    height: 300px;
+  }
+}

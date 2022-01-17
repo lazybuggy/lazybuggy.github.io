@@ -1,0 +1,22 @@
+.arrow {
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  background: transparent;
+  padding: 0;
+}
+
+.previousArrow {
+  border-top: none;
+  border-bottom: 35px solid currentColor;
+}
+
+.nextArrow {
+  border-bottom: none;
+  border-top: 35px solid currentColor;
+}
+
+.textContainer,
+.container {
+  color: #b6b0a0;
+  display: inline;
+}
