@@ -17,7 +17,7 @@ const Footer: FunctionComponent = () => {
       <div className={styles.footerRight}>
         <p>
           <a href="mailto: lucia.okeh@gmail.com" target="_blank">
-            lucia dot okeh at gmail dot com
+            lucia.okeh @ gmail dot com
           </a>
         </p>
         <p>
