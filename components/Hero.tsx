@@ -1,5 +1,4 @@
 import styles from "../styles/Hero.module.css";
-// import classnames from 'classnames';
 import { HeroType } from "../types/index";
 import { FunctionComponent, useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -10,8 +9,6 @@ const Hero: FunctionComponent<HeroType> = ({
   colour,
   children,
 }) => {
-  // const [index, setIndex] = useState(null);
-  // const [innerRef, setInnerRef] = useState(null);
   const index = useRef();
   const innerRef = useRef();
   const contentRef = useRef(null);

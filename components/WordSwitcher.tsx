@@ -1,18 +1,6 @@
 import styles from "../styles/WordSwitcher.module.css";
-// import classnames from 'classnames';
 import { WordSwitcherType } from "../types/index";
 import { FunctionComponent, useState, useEffect } from "react";
-// type Props = {
-//     data: WordSwitcherType
-// }
-
-// const upArrowClick = () => {
-//   console.log("up clicked");
-// };
-
-// const downArrowClick = () => {
-//   console.log("down clicked");
-// };
 
 const WordSwitcher: FunctionComponent<WordSwitcherType> = ({
   words,
@@ -33,9 +21,7 @@ const WordSwitcher: FunctionComponent<WordSwitcherType> = ({
       return () => clearInterval(wordInterval);
     }
   }, []);
-  //   console.log("workingn ", words, colour);
-  //   const buttonClass
-  //className={classnames({[styles.previousArrow]:true})}
+
   useEffect(() => {
     if (index >= 0 && index < optionCount) {
       setWord(words[index]);

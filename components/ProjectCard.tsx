@@ -2,7 +2,6 @@ import styles from "../styles/ProjectCard.module.css";
 import { ProejctType } from "../types/index";
 import { FunctionComponent, useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const ProjectCard: FunctionComponent<ProejctType> = ({
   colour,

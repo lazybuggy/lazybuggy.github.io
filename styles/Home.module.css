@@ -1,32 +1,25 @@
-.container{
-  background: #e1f0f5;
-  background: #D6CFC9;
-
-  /* color: black; */
+.container {
+  background: #d6cfc9;
   height: 100vh;
-  /* width: 100%; */
-  /* overflow: hidden; */
-
-
-
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-    font-family: 'Euclid Circular B', sans-serif;
+  font-family: "Euclid Circular B", sans-serif;
 }
 
-.intro{
-  color: #F5F7F2;
+.intro {
+  color: #f5f7f2;
 }
 
-.intro h2{
+.intro h2 {
   font-size: 40px;
 }
 
-.intro p{
+.intro p {
   margin: 0;
 }
 
-.intro .interests{
+.intro h4{
+  margin: 0 0 5px;
+}
+
+.intro .interests {
   margin-top: 50px;
 }

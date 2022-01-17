@@ -1,26 +1,7 @@
 import styles from "../styles/Footer.module.css";
-// import classnames from 'classnames';
-import { WordSwitcherType } from "../types/index";
-import { FunctionComponent, useState, useEffect } from "react";
-// type Props = {
-//     data: WordSwitcherType
-// }
-
-// const upArrowClick = () => {
-//   console.log("up clicked");
-// };
-
-// const downArrowClick = () => {
-//   console.log("down clicked");
-// };
+import { FunctionComponent } from "react";
 
 const Footer: FunctionComponent = () => {
-  const [index, setIndex] = useState(0);
-
-  //   console.log("workingn ", words, colour);
-  //   const buttonClass
-  //className={classnames({[styles.previousArrow]:true})}
-
   return (
     <div className={styles.footerContainer}>
       <div className={styles.footerLeft}>
