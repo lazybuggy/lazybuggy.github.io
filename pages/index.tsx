@@ -18,7 +18,7 @@ export default function Home({ title, description, ...props }) {
         <title>Lucia Okeh</title>
         <meta name="description" content="Lucia Okehs' personal website" />
         <link rel="shortcut icon" href="/static/favicon.ico" />
-        <link rel="image" href="/static/luArt.png" />
+        <meta itemProp="image" content="/static/luArt.png" />
       </Helmet>
       <div className={styles.container}>
         <Hero colour="#332421">
@@ -140,7 +140,6 @@ export default function Home({ title, description, ...props }) {
         </div>
         <Footer />
       </div>
-      );
     </>
   );
 }
