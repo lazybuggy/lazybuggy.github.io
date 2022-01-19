@@ -11,13 +11,12 @@ const Footer: FunctionComponent = () => {
             Who knows where life will take you. The road is long and in the end,
             the journey is the destination
           </p>
-          <p>— OTH</p>
         </div>
       </div>
       <div className={styles.footerRight}>
         <p>
           <a href="mailto: lucia.okeh@gmail.com" target="_blank">
-            lucia.okeh @ gmail dot com
+            lucia.okeh@gmail.com
           </a>
         </p>
         <p>

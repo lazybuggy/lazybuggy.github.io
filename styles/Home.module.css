@@ -20,6 +20,16 @@
   margin: 0 0 5px;
 }
 
+.passion{
+  margin: 0;
+}
+
+.extra{
+  margin: 0;
+  color: #eddcce;
+  font-size: 16px;
+}
+
 .intro .interests {
   margin-top: 50px;
 }

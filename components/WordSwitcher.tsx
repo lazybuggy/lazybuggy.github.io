@@ -43,7 +43,9 @@ const WordSwitcher: FunctionComponent<WordSwitcherType> = ({
           onClick={() => setIndex((index) => index - 1)}
         />
       )}
-      <div className={styles.textContainer}>{word}</div>
+      <div className={styles.textContainer} style={{ color: colour }}>
+        {word}
+      </div>
       {!autoplay && (
         <button
           className={[styles.nextArrow, styles.arrow].join(" ")}

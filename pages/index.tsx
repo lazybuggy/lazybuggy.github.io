@@ -59,10 +59,34 @@ export default function Home({ title, description, ...props }) {
             </div>
           </div>
         </Section>
-        <Section align={Alignment.RIGHT} colour="#897D5E">
+        <Section align={Alignment.RIGHT} colour="rosybrown">
+          <div className={styles.intro}>
+            <h3 className={styles.passion}>
+              discovering a passion you do well &amp; getting paid to do it is a
+              dream for many people.
+            </h3>
+            <h3 className={styles.extra}>good thing i’m awake&amp;dreaming.</h3>
+            <h3>
+              I’m interested in fullstack development with an emphasis on
+              backend development. Currently creating with AWS ☁
+            </h3>
+          </div>
+        </Section>
+        <Section colour="#897D5E">
           <div className={styles.intro}>
             <h2>Words strung together that I love</h2>
-            <ul>
+            <WordSwitcher
+              interval={2500}
+              colour="#e0dbce"
+              words={[
+                "the world belongs to the brave",
+                "alis grave nil",
+                "the best way to make dreams come true is to wake up",
+                "live for you",
+                "you don't know where you're going until you know where you've been",
+              ]}
+            />
+            {/* <ul>
               <li>
                 <h4>the world belongs to the brave</h4>
               </li>
@@ -78,10 +102,10 @@ export default function Home({ title, description, ...props }) {
                   been
                 </h4>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </Section>
-        <div className={projStyles.projectSection}>
+        {/* <div className={projStyles.projectSection}>
           <ProjectCard colour="#9F7474" image="/static/giftedProj.png">
             <h3>
               <a target="_blank" href="https://github.com/lazybuggy/GIFted">
@@ -137,7 +161,7 @@ export default function Home({ title, description, ...props }) {
               as well as view details on each movie.
             </p>
           </ProjectCard>
-        </div>
+        </div> */}
         <Footer />
       </div>
     </>
