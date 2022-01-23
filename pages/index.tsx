@@ -14,16 +14,6 @@ export default function Home({ title, description, ...props }) {
           content="Lucia Okeh' space. Lucia is a software engineer based in Toronto, come say hi!"
         ></meta>
         <link rel="shortcut icon" href="/static/luCodes.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Englebert&family=Farro:wght@300&family=Love+Light&family=Pompiere&family=Staatliches&display=swap"
-          rel="stylesheet"
-        ></link>
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://luciaokeh.space/" />
@@ -76,7 +66,7 @@ export default function Home({ title, description, ...props }) {
             <div className={styles.interests}>
               I like:{" "}
               <WordSwitcher
-                interval={5000}
+                interval={3500}
                 colour="#b2beb5"
                 words={[
                   "travel",
@@ -119,8 +109,8 @@ export default function Home({ title, description, ...props }) {
             transform="translate(-192.97 -111.69)"
             fill="#fff"
             stroke="#d6d0c9"
-            stroke-miterlimit="10"
-            stroke-width="8px"
+            strokeMiterlimit="10"
+            strokeWidth="8px"
             opacity=".11"
           />
         </svg>

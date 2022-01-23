@@ -1,19 +1,23 @@
 @font-face {
-    font-family: 'Recoleta';
-    src: local('Recoleta Medium'), local('Recoleta-Medium'),
-        url('/static/fonts/Recoleta/Recoleta-Medium.woff2') format('woff2'),
-        url('/static/fonts/Recoleta/Recoleta-Medium.woff') format('woff'),
-        url('/static/fonts/Recoleta/Recoleta-Medium.ttf') format('truetype');
-    font-weight: 500;
+    font-family: 'Farro';
+    src: local('Farro Light'), local('Farro-Light'),
+        url('/static/fonts/Farro/Farro-Light.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'Euclid Circular B';
-    src: local('Euclid Circular B Regular'), local('Euclid-Circular-B-Regular'),
-        url('/static/fonts/EuclidCircularB/EuclidCircularB-Regular.woff2') format('woff2'),
-        url('/static/fonts/EuclidCircularB/EuclidCircularB-Regular.woff') format('woff'),
-        url('/static/fonts/EuclidCircularB/EuclidCircularB-Regular.ttf') format('truetype');
+    font-family: 'Love Light';
+    src: local('Love Light'), local('LoveLight-Regular'),
+        url('/static/fonts/Love_Light/LoveLight-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Staatliches';
+    src: local('Staatliches'), local('Staatliches-Regular'),
+        url('/static/fonts/Staatliches/Staatliches-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
   }

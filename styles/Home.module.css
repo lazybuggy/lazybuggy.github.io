@@ -76,7 +76,7 @@
   position: absolute;
   left: 20px;
   top: 120px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .socials img {
@@ -95,7 +95,8 @@
 
 .background {
   position: absolute;
-  top: 0;
+  top: 80px;
+  left: 80px;
   pointer-events: none;
   z-index: 0;
   height: 100%;
@@ -152,6 +153,7 @@
 
   .background {
     margin-left: 200px;
+    left: unset;
   }
 
   .backgroundLu {
