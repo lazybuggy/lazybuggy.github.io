@@ -1,18 +1,18 @@
 import styles from "../styles/Home.module.css";
 import WordSwitcher from "../components/WordSwitcher";
-import { Helmet } from "react-helmet";
 import { GetStaticProps } from "next";
+import Head from "next/head";
 
 export default function Home({ title, description, ...props }) {
   return (
     <>
-      <Helmet>
+      <Head>
         <meta charSet="utf-8" />
         <title>Lucia Okeh</title>
         <meta
           name="description"
           content="Lucia Okeh' space. Lucia is a software engineer based in Toronto, come say hi!"
-        />
+        ></meta>
         <link rel="shortcut icon" href="/static/luCodes.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -42,7 +42,7 @@ export default function Home({ title, description, ...props }) {
           content="Lucia Okeh' space. Lucia is a software engineer based in Toronto, come say hi!"
         />
         <meta property="twitter:image" content="/static/luArt.png"></meta>
-      </Helmet>
+      </Head>
       <div className={styles.root}>
         <div className={styles.lucia}>
           <h1>Lucia Okeh</h1>
@@ -92,10 +92,7 @@ export default function Home({ title, description, ...props }) {
               />
             </div>
             <div className={styles.intro3}>
-              <p>
-                I’m interested in fullstack development with an emphasis on
-                backend development. Currently creating with AWS ☁️
-              </p>
+              <p>Currently creating with AWS ☁️</p>
             </div>
           </div>
           {/* <img src="/static/luArt.png" /> */}
@@ -139,6 +136,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       title: configData.default.title,
       description: configData.default.description,
+      image: configData.default.image,
     },
   };
 };
