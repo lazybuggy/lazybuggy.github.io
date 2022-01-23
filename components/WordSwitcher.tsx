@@ -6,7 +6,7 @@ const WordSwitcher: FunctionComponent<WordSwitcherType> = ({
   words,
   colour,
   autoplay = true,
-  interval = 5000,
+  interval,
 }) => {
   const [index, setIndex] = useState(0);
   const [optionCount, setOptionCount] = useState(words.length);

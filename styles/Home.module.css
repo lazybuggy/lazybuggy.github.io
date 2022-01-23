@@ -1,35 +1,162 @@
-.container {
-  background: #d6cfc9;
+.root {
+  background: #f2f3f4;
   height: 100vh;
-  font-family: "Euclid Circular B", sans-serif;
+  padding: 20px 20px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: "Farro", sans-serif;
+  position: relative;
+  overflow: hidden;
 }
 
-.intro {
-  color: #f5f7f2;
-}
-
-.intro h2 {
-  font-size: 40px;
-}
-
-.intro p {
+.root * {
   margin: 0;
 }
 
-.intro h4{
-  margin: 0 0 5px;
+.lucia h1 {
+  font-size: 80px;
+  line-height: 1;
+  color: rosybrown;
+  font-family: "Staatliches", Helvetica, Arial, sans-serif;
 }
 
-.passion{
-  margin: 0;
+.lucia p {
+  font-size: 15px;
+  font-family: "Staatliches",  Helvetica, Arial, sans-serif;
+  color: #d6cfc9;
 }
 
-.extra{
-  margin: 0;
-  color: #eddcce;
-  font-size: 16px;
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  z-index: 2;
 }
 
-.intro .interests {
-  margin-top: 50px;
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introContainer h2 {
+  font-size: 30px;
+}
+
+.introContainer h3 {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.introContainer p,
+.interests {
+  font-size: 14px;
+}
+
+.interests {
+  margin: 15px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Love Light", cursive;
+  z-index: 2;
+}
+
+.quotes {
+  font-size: 28px;
+  height: 60px;
+  line-height: 1;
+}
+
+.socials {
+  display: flex;
+  position: absolute;
+  left: 20px;
+  top: 120px;
+  z-index: 2;
+}
+
+.socials img {
+  width: 35px;
+  margin-right: 5px;
+  opacity: 0.8;
+}
+
+.backgroundLu {
+  position: absolute;
+  z-index: 1;
+  width: 120%;
+  bottom: -60px;
+  right: -180px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .root {
+    padding: 40px 80px 30px;
+  }
+
+  .lucia h1 {
+    font-size: 100px;
+  }
+
+  .introContainer h2 {
+    font-size: 38px;
+  }
+
+  .introContainer h3 {
+    margin: 25px 0;
+    font-size: 24px;
+  }
+
+  .introContainer p,
+  .interests {
+    font-size: 18px;
+  }
+
+  .interests {
+    margin: 25px 0;
+  }
+
+  .introContainer {
+    max-width: 485px;
+  }
+
+  .quotes {
+    font-size: 34px;
+    height: unset;
+  }
+
+  .socials {
+    left: unset;
+    top: unset;
+    right: 80px;
+  }
+
+  .socials img {
+    margin-right: 0;
+    margin-left: 5px;
+    width: 40px;
+  }
+
+  .background {
+    margin-left: 200px;
+  }
+
+  .backgroundLu {
+    width: unset;
+    bottom: unset;
+    right: unset;
+  }
 }
