@@ -1,14 +1,7 @@
 import styles from "../styles/Home.module.css";
-import projStyles from "../styles/ProjectCard.module.css";
-
-import { GetStaticProps } from "next";
-import Section from "../components/Section";
-import Hero from "../components/Hero";
-import { Alignment } from "../types";
-import Footer from "../components/Footer";
 import WordSwitcher from "../components/WordSwitcher";
-import ProjectCard from "../components/ProjectCard";
 import { Helmet } from "react-helmet";
+import { GetStaticProps } from "next";
 
 export default function Home({ title, description, ...props }) {
   return (
@@ -16,25 +9,64 @@ export default function Home({ title, description, ...props }) {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Lucia Okeh</title>
-        <meta name="description" content="Lucia Okehs' personal website" />
-        <link rel="shortcut icon" href="/static/favicon.ico" />
-        <meta itemProp="image" content="/static/luArt.png" />
+        <meta
+          name="description"
+          content="Lucia Okeh' space. Lucia is a software engineer based in Toronto, come say hi!"
+        />
+        <link rel="shortcut icon" href="/static/luCodes.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Englebert&family=Farro:wght@300&family=Love+Light&family=Pompiere&family=Staatliches&display=swap"
+          rel="stylesheet"
+        ></link>
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://luciaokeh.space/" />
+        <meta property="og:title" content="Lucia Okeh" />
+        <meta
+          property="og:description"
+          content="Lucia Okeh' space.Lucia is a software engineer based in Toronto, come say hi!"
+        />
+        <meta property="og:image" content="/static/luArt.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://luciaokeh.space/" />
+        <meta property="twitter:title" content="Lucia Okeh" />
+        <meta
+          property="twitter:description"
+          content="Lucia Okeh' space. Lucia is a software engineer based in Toronto, come say hi!"
+        />
+        <meta property="twitter:image" content="/static/luArt.png"></meta>
       </Helmet>
-      <div className={styles.container}>
-        <Hero colour="#332421">
+      <div className={styles.root}>
+        <div className={styles.lucia}>
           <h1>Lucia Okeh</h1>
           <p>The journey is the destination</p>
-        </Hero>
-        <Section>
-          <div className={styles.intro}>
+        </div>
+        <div className={styles.socials}>
+          <a href="mailto: lucia.okeh@gmail.com" target="_blank">
+            <img src="/static/mail.png" />
+          </a>
+          <a href="https://github.com/lazybuggy/" target="_blank">
+            <img src="/static/github.png" />
+          </a>
+          <a href="https://www.linkedin.com/in/luciaokeh/" target="_blank">
+            <img src="/static/linkedin.png" />
+          </a>
+        </div>
+        <div className={styles.content}>
+          <div className={styles.introContainer}>
             <h2>Welcome to my space</h2>
-            <div className={styles.introOne}>
-              <h3>
-                I am a Toronto based software engineer — currently working
-                @jam3.
-              </h3>
-            </div>
-            <div className={styles.introTwo}>
+            <h3>
+              I am a software engineer based in Toronto — currently working
+              @jam3.
+            </h3>
+            <div className={styles.intro2}>
               <p>If I'm not coding, im reading.</p>
               <p>
                 &amp; if I'm not reading, I'm probably binge watching another
@@ -44,40 +76,35 @@ export default function Home({ title, description, ...props }) {
             <div className={styles.interests}>
               I like:{" "}
               <WordSwitcher
-                interval={2000}
+                interval={5000}
+                colour="#b2beb5"
                 words={[
                   "travel",
                   "reading",
                   "space",
                   "anime",
                   "coding",
+                  "the unknown",
                   "gaming",
                   "quotes",
                   "..sleeping",
                 ]}
               />
             </div>
+            <div className={styles.intro3}>
+              <p>
+                I’m interested in fullstack development with an emphasis on
+                backend development. Currently creating with AWS ☁️
+              </p>
+            </div>
           </div>
-        </Section>
-        <Section align={Alignment.RIGHT} colour="rosybrown">
-          <div className={styles.intro}>
-            <h3 className={styles.passion}>
-              discovering a passion you do well &amp; getting paid to do it is a
-              dream for many people.
-            </h3>
-            <h3 className={styles.extra}>good thing i’m awake&amp;dreaming.</h3>
-            <h3>
-              I’m interested in fullstack development with an emphasis on
-              backend development. Currently creating with AWS ☁
-            </h3>
-          </div>
-        </Section>
-        <Section colour="#897D5E">
-          <div className={styles.intro}>
-            <h2>Words strung together that I love</h2>
+          {/* <img src="/static/luArt.png" /> */}
+        </div>
+        <div className={styles.footer}>
+          <div className={styles.quotes}>
             <WordSwitcher
-              interval={2500}
-              colour="#e0dbce"
+              interval={11000}
+              colour="rosybrown"
               words={[
                 "the world belongs to the brave",
                 "alis grave nil",
@@ -86,83 +113,20 @@ export default function Home({ title, description, ...props }) {
                 "you don't know where you're going until you know where you've been",
               ]}
             />
-            {/* <ul>
-              <li>
-                <h4>the world belongs to the brave</h4>
-              </li>
-              <li>
-                <h4>alis grave nil</h4>
-              </li>
-              <li>
-                <h4>the best way to make dreams come true is to wake up</h4>
-              </li>
-              <li>
-                <h4>
-                  you don't know where you're going until you know where you've
-                  been
-                </h4>
-              </li>
-            </ul> */}
           </div>
-        </Section>
-        {/* <div className={projStyles.projectSection}>
-          <ProjectCard colour="#9F7474" image="/static/giftedProj.png">
-            <h3>
-              <a target="_blank" href="https://github.com/lazybuggy/GIFted">
-                GIFTED
-              </a>
-            </h3>
-            <p>
-              Developed a simple web app which utilized 2 RESTful APIs, Giphy
-              for GIFs and OpenWeatherMaps for weather at various locations.
-              Allows users to view GIFs related to the current weather at
-              certain locations.
-            </p>
-          </ProjectCard>
-          <ProjectCard colour="#A2A071" image="/static/faceoffProj.png">
-            <h3>
-              <a
-                target="_blank"
-                href="https://github.com/lazybuggy/FaceOffEmotionApp"
-              >
-                FaceOff
-              </a>
-            </h3>
-            <p>
-              Remember Dance Dance Revolution? This version puts your
-              expressions to the test! Introducing FaceOff, a revolutionary game
-              for anyone who wants to see how well they can express themselves.
-            </p>
-          </ProjectCard>
-          <ProjectCard image="/static/stbProj.jpeg">
-            <h3>
-              <a
-                target="_blank"
-                href="https://github.com/lazybuggy/GameJam2018"
-              >
-                Secure The Bag
-              </a>
-            </h3>
-            <p>
-              6 hours to build a game with the theme 'Freezing'. You're a theif
-              and the objective is to make to the end and steal the prize
-              without being caught. Goodluck.
-            </p>
-          </ProjectCard>
-          <ProjectCard colour="#555C80" image="/static/fMasterProj.png">
-            <h3>
-              <a target="_blank" href="https://github.com/lazybuggy/FilmMaster">
-                FilmMaster
-              </a>
-            </h3>
-            <p>
-              Made with PostgreSQL and Ruby on Rails. This is a movie review
-              website that allows for users to sign in, rate and review movies
-              as well as view details on each movie.
-            </p>
-          </ProjectCard>
-        </div> */}
-        <Footer />
+        </div>
+        <img className={styles.backgroundLu} src="/static/luArt.png" />
+        <svg className={styles.background} viewBox="0 0 268.47 241.21">
+          <path
+            d="M318.21 118.26c-2.16 13.11-13.27 47.8-27 69.58-23.44 37.16-56.87 49.16-64.82 44.7-27-15.29 59.53-135.86 91.82-114.28 31.41 21 74.94 82.17 55.49 105-26.3 30.9-137.46-92.78-169-58.57-22.86 24.78 10.63 120.07 29.65 139.16 57.81 58 45.84-90.35 97.1-140 42.17-40.87 133.65 52.82 125.5 75.31-11.13 30.72-181.7-28.24-211.37 25.76-13.48 24.53-2.53 63.56 19.15 77.94 34.94 23.16 39.41-24.67 72.74-68.48 24.49-32.18 92.65-57.14 94.43-76.89"
+            transform="translate(-192.97 -111.69)"
+            fill="#fff"
+            stroke="#d6d0c9"
+            stroke-miterlimit="10"
+            stroke-width="8px"
+            opacity=".11"
+          />
+        </svg>
       </div>
     </>
   );
