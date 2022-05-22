@@ -53,8 +53,8 @@ export default function Home({ title, description, ...props }) {
           <div className={styles.introContainer}>
             <h2>Welcome to my space</h2>
             <h3>
-              I am a software engineer based in Toronto — currently working
-              @jam3.
+              I am a software engineer based in Toronto — currently working @
+              swift medical.
             </h3>
             <div className={styles.intro2}>
               <p>If I'm not coding, im reading.</p>
@@ -67,7 +67,7 @@ export default function Home({ title, description, ...props }) {
               I like:{" "}
               <WordSwitcher
                 interval={3500}
-                colour="#b2beb5"
+                colour="#81b0a8"
                 words={[
                   "travel",
                   "reading",
