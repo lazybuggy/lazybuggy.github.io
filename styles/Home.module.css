@@ -24,7 +24,7 @@
 .lucia p {
   font-size: 15px;
   font-family: "Staatliches",  Helvetica, Arial, sans-serif;
-  color: rosybrown;
+  color: #b6a196;
 }
 
 .content {
@@ -81,7 +81,7 @@
 
 .socials img {
   width: 35px;
-  margin-right: 5px;
+  margin-right: 7px;
   opacity: 0.8;
 }
 
@@ -151,7 +151,7 @@
 
   .socials img {
     margin-right: 0;
-    margin-left: 5px;
+    margin-left: 10px;
     width: 40px;
   }
 

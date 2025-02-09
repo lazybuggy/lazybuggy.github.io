@@ -67,7 +67,7 @@ export default function Home({ title, description, ...props }) {
               I like:{" "}
               <WordSwitcher
                 interval={3500}
-                colour="#81b0a8"
+                colour="#b6a196"
                 words={[
                   "travel",
                   "reading",
@@ -92,7 +92,7 @@ export default function Home({ title, description, ...props }) {
           <div className={styles.quotes}>
             <WordSwitcher
               interval={11000}
-              colour="rosybrown"
+              colour="#967969"
               words={[
                 "the world belongs to the brave",
                 "alis grave nil",
