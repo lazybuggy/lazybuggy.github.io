@@ -17,14 +17,14 @@
 .lucia h1 {
   font-size: 80px;
   line-height: 1;
-  color: rosybrown;
+  color: #967969;
   font-family: "Staatliches", Helvetica, Arial, sans-serif;
 }
 
 .lucia p {
   font-size: 15px;
   font-family: "Staatliches",  Helvetica, Arial, sans-serif;
-  color: #d6cfc9;
+  color: rosybrown;
 }
 
 .content {

@@ -54,7 +54,7 @@ export default function Home({ title, description, ...props }) {
             <h2>Welcome to my space</h2>
             <h3>
               I am a software engineer based in Toronto — currently working @
-              swift medical.
+              honeycomb 🐝🍯
             </h3>
             <div className={styles.intro2}>
               <p>If I'm not coding, im reading.</p>
@@ -77,12 +77,13 @@ export default function Home({ title, description, ...props }) {
                   "the unknown",
                   "gaming",
                   "quotes",
+                  "learning",
                   "..sleeping",
                 ]}
               />
             </div>
             <div className={styles.intro3}>
-              <p>Currently creating with AWS ☁️</p>
+              <p>Currently living & learning 🫶🏽</p>
             </div>
           </div>
           {/* <img src="/static/luArt.png" /> */}
@@ -95,9 +96,9 @@ export default function Home({ title, description, ...props }) {
               words={[
                 "the world belongs to the brave",
                 "alis grave nil",
-                "the best way to make dreams come true is to wake up",
                 "live for you",
                 "you don't know where you're going until you know where you've been",
+                "unlimited",
               ]}
             />
           </div>
